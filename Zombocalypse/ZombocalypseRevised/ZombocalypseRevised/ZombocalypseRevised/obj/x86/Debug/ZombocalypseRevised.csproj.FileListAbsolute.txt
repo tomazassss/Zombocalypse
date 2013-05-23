@@ -1,0 +1,121 @@
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Backgrounds\titlescreen.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\leftarrowUp.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\rightarrowUp.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\stopBar.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\tileset1.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\tileset2.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\grassland_tiles.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Fonts\ControlFont.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\ZombocalypseRevised.exe
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\ZombocalypseRevised.pdb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\RpgLibrary.dll
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\XRPGLibrary.dll
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\RpgLibrary.pdb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\XRPGLibrary.pdb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\obj\x86\Debug\ZombocalypseRevised.csprojResolveAssemblyReference.cache
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\obj\x86\Debug\ZombocalypseRevised.exe
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\obj\x86\Debug\ZombocalypseRevised.pdb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Maps\Map1.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\SelectedButton.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\Start.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\Exit.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\Load.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\background.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\armor.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\boots.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\helmet.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\leggings.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\shield.xnb
+C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\weapon.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Backgrounds\titlescreen.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\leftarrowUp.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\rightarrowUp.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\stopBar.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\tileset1.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\tileset2.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\grassland_tiles.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\SelectedButton.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\Start.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\Exit.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\Load.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\armor.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\boots.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\helmet.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\leggings.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\shield.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\weapon.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\equipment_background.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\PlayerSprites\T_Vlad_Sword_Walking_48x48.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\inventory_background.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\night_vision_goggles.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\barrel_bottom.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\desert_eagle.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\jeans.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\kevlar_vest.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\farmers_boots.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_background.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border_v2.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border_v3.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border_v4.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border_v5.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Grass_64_32.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Objects2_64_96.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Objects_64_64.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Platform_64_64.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_WallWater_64_64.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Wall_64_96.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Water_64_32.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\bullet.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Misc\ScrollBar\scroller.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Misc\ScrollBar\scrollerTrack.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\desert_eagle_ammo.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\GreenZombie.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\border-v6.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\background-v2.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\button_hover.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Backgrounds\new_titlescreen.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Backgrounds\tomo_titlescreen.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\PlayerSprites\T_Vlad_Gun_Walking.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\GreenZombie_Disintegrate.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\GreenZombie_BeenHit.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\GreenZombie_Attack.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Misc\bullet_trail.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\PlayerSprites\Vlad_Shooting.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\NPCSprites\Professor_Reading.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\NPCSprites\Professor_Talking.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Fonts\ControlFont.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Fonts\ItemDataFont.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Fonts\ButtonFont.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Maps\Map1.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\desert_eagle.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\kevlar_vest.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\farmers_boots.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\jeans.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\night_vision_goggles.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\barrel_bottom.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\special_goggles.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\desert_eagle_ammo.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Maps\Map_Test.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Missions\AllMissions.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Dialogues\AllDialogues.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\PlayerSounds\DeagleShot.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\PlayerSounds\Footsteps_Grass_Faster.xnb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\PlayerSounds\Footsteps_Grass_Faster.wma
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\zombiai.xgs
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\Wave Bank.xwb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\Sound Bank.xsb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\ZombieSounds\ZombieAttack.xgs
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\ZombieSounds\ZombieAttackWaveBank.xwb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\ZombieSounds\ZombieAttackSoundBank.xsb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\ZombocalypseRevised.exe
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\ZombocalypseRevised.pdb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\RpgLibrary.dll
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\XRPGLibrary.dll
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\RpgLibrary.pdb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\XRPGLibrary.pdb
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\obj\x86\Debug\ZombocalypseRevised.exe
+C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\obj\x86\Debug\ZombocalypseRevised.pdb

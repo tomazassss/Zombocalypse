@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <!-- TODO: replace this Asset with your own XML asset data. -->
+  <Asset Type="XRpgLibrary.DialogueSystem.AllDialogues">
+    <Dialogues>
+      <Item>
+        <Key>
+          <DialogueId>0</DialogueId>
+          <NpcId>0</NpcId>
+        </Key>
+        <Value>
+          <ChatOption>What is happening around here?</ChatOption>
+          <Response>You fool! You unleashed the horrors that were locked inside Pandora's box!</Response>
+          <DialogueInfo>
+            <DialogueId>0</DialogueId>
+            <NpcId>0</NpcId>
+          </DialogueInfo>
+          <SuccessorInfo>
+            <Item>
+              <DialogueId>1</DialogueId>
+              <NpcId>0</NpcId>
+            </Item>
+          </SuccessorInfo>
+          <IsRepeatable>false</IsRepeatable>
+        </Value>
+      </Item>
+      <Item>
+        <Key>
+          <DialogueId>1</DialogueId>
+          <NpcId>0</NpcId>
+        </Key>
+        <Value>
+          <ChatOption>What? I thought it was a cookie jar!</ChatOption>
+          <Response>Yeah... And people eat each other's brains casually...</Response>
+          <DialogueInfo>
+            <DialogueId>1</DialogueId>
+            <NpcId>0</NpcId>
+          </DialogueInfo>
+          <SuccessorInfo>
+            <Item>
+              <DialogueId>2</DialogueId>
+              <NpcId>0</NpcId>
+            </Item>
+          </SuccessorInfo>
+          <IsRepeatable>false</IsRepeatable>
+        </Value>
+      </Item>
+      <Item>
+        <Key>
+          <DialogueId>2</DialogueId>
+          <NpcId>0</NpcId>
+        </Key>
+        <Value>
+          <ChatOption>There must be a way to stop this.</ChatOption>
+          <Response>There is none that i know of. You screwed up. Big time.</Response>
+          <DialogueInfo>
+            <DialogueId>2</DialogueId>
+            <NpcId>0</NpcId>
+          </DialogueInfo>
+          <SuccessorInfo>
+          </SuccessorInfo>
+          <IsRepeatable>false</IsRepeatable>
+        </Value>
+      </Item>
+    </Dialogues>
+  </Asset>
+</XnaContent>

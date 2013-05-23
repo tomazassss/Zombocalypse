@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sections>
+  <WaveBank Name="Wave Bank">Wave Bank
+{
+    Name = Wave Bank;
+    Xbox File = Xbox\Wave Bank.xwb;
+    Windows File = Win\Wave Bank.xwb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Seek Tables = 1;
+    Compression Preset Name = &lt;none&gt;;
+    Bank Last Revised Low = 704614892;
+    Bank Last Revised High = 30287243;
+
+    Wave
+    {
+        Name = zombies;
+        File = zombies.wav;
+        Build Settings Last Modified Low = 3485000846;
+        Build Settings Last Modified High = 30287241;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 2754752;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3031064897;
+            Last Modified High = 30287240;
+        }
+    }
+
+    Wave
+    {
+        Name = zombie_ambience;
+        File = zombie_ambience.wav;
+        Build Settings Last Modified Low = 515546800;
+        Build Settings Last Modified High = 30287243;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 3507452;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3880844308;
+            Last Modified High = 30287242;
+        }
+    }
+}
+
+</WaveBank>
+</Sections>

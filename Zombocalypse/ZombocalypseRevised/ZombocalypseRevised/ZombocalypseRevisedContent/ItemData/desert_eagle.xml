@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="XRPGLibrary.Controls.Items.Item">
+    <ItemType>MAIN_HAND</ItemType>
+    <ItemName>Desert Eagle</ItemName>
+    <IsEquipable>true</IsEquipable>
+    <IsStackable>false</IsStackable>
+    <MaxStack>1</MaxStack>
+    <ID>2</ID>
+    <Stats>
+      <Item>
+        <StatType>MIN_DAMAGE</StatType>
+        <Val>40.0</Val>
+      </Item>
+      <Item>
+        <StatType>MAX_DAMAGE</StatType>
+        <Val>45.0</Val>
+      </Item>
+      <Item>
+        <StatType>ATTACK_SPEED</StatType>
+        <Val>1.0</Val>
+      </Item>
+      <Item>
+        <StatType>RELOAD_SPEED</StatType>
+        <Val>1.5</Val>
+      </Item>
+      <Item>
+        <StatType>CLIP_SIZE</StatType>
+        <Val>7</Val>
+      </Item>
+    </Stats>
+  </Asset>
+  
+</XnaContent>

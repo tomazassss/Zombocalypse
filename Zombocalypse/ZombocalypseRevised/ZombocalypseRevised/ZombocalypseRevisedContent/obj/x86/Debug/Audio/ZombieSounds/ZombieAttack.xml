@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sections>
+  <WaveBank Name="ZombieAttackWaveBank">Wave Bank
+{
+    Name = ZombieAttackWaveBank;
+    Xbox File = Xbox\ZombieAttackWaveBank.xwb;
+    Windows File = Win\ZombieAttackWaveBank.xwb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Seek Tables = 1;
+    Compression Preset Name = &lt;none&gt;;
+    Bank Last Revised Low = 3732251322;
+    Bank Last Revised High = 30295721;
+
+    Wave
+    {
+        Name = Zombie_Attack;
+        File = Zombie_Attack.wav;
+        Build Settings Last Modified Low = 2837035802;
+        Build Settings Last Modified High = 30295715;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 1035392;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2290351769;
+            Last Modified High = 30295700;
+        }
+    }
+
+    Wave
+    {
+        Name = Zombie_Long_Death;
+        File = Zombie_Long_Death.wav;
+        Build Settings Last Modified Low = 2982821544;
+        Build Settings Last Modified High = 30295719;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 593668;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2589734626;
+            Last Modified High = 30295719;
+        }
+    }
+
+    Wave
+    {
+        Name = Zombie_Hit_01;
+        File = Zombie_Hit_01.wav;
+        Build Settings Last Modified Low = 3454376431;
+        Build Settings Last Modified High = 30295721;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 56576;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1664084923;
+            Last Modified High = 30295721;
+        }
+    }
+
+    Wave
+    {
+        Name = Zombie_Hit_02;
+        File = Zombie_Hit_02.wav;
+        Build Settings Last Modified Low = 3454386432;
+        Build Settings Last Modified High = 30295721;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 78336;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2315086380;
+            Last Modified High = 30295721;
+        }
+    }
+
+    Wave
+    {
+        Name = Zombie_Hit_03;
+        File = Zombie_Hit_03.wav;
+        Build Settings Last Modified Low = 3454396432;
+        Build Settings Last Modified High = 30295721;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 143360;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2675542724;
+            Last Modified High = 30295721;
+        }
+    }
+
+    Wave
+    {
+        Name = Zombie_Hit_04;
+        File = Zombie_Hit_04.wav;
+        Build Settings Last Modified Low = 3454406432;
+        Build Settings Last Modified High = 30295721;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 210944;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3086169951;
+            Last Modified High = 30295721;
+        }
+    }
+}
+
+</WaveBank>
+</Sections>

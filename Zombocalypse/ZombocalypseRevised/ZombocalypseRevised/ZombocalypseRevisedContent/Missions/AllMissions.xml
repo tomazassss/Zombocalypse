@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <!-- TODO: replace this Asset with your own XML asset data. -->
+  <Asset Type="XRpgLibrary.MissionSystem.MissionFactory">
+    <AllMissions>
+      <Item>
+        <MissionId>0</MissionId>
+        <CurrentMission Type="XRpgLibrary.MissionSystem.ExplorationMission">
+          <Title>Go to &lt;location> test test test</Title>
+          <Description>Find your way out of this hellhole and go to &lt;location>
+Test Test Test Test Test Test Test Test Test TestTest Test Test Test Test Test Test Test Test Test
+Test Test Test Test Test Test Test Test Test Test
+Test Test Test Test Test Test Test Test Test Test
+Test Test Test Test Test Test Test Test Test Test
+Test Test Test Test Test Test Test Test Test Test
+Test Test Test Test Test Test Test Test Test Test
+Test Test Test Test Test Test Test Test Test TestTest Test Test Test Test Test Test Test Test Test
+Test Test Test Test Test Test Test Test Test Test
+Test Test Test Test Test Test Test Test Test Test
+Test Test Test Test Test Test Test Test Test Test
+Test Test Test Test Test Test Test Test Test Test
+Test Test Test Test Test Test Test Test Test Test
+          </Description>
+          
+          <SuccessNode Type="XRpgLibrary.MissionSystem.DialogueMission">
+            <Title>Talk to the strange man</Title>
+            <Description>You found the &lt;location>. Talk to the strange man by the fire for more information.</Description>
+            <DialogueInfo>
+              <DialogueId>0</DialogueId>
+              <NpcId>0</NpcId>
+            </DialogueInfo>
+          </SuccessNode>
+          <NewDialogueOption>
+            <DialogueId>0</DialogueId>
+            <NpcId>0</NpcId>
+          </NewDialogueOption>
+          <TargetArea>5 5</TargetArea>
+          <AreaWidthHeight>4 8</AreaWidthHeight>
+          <MapId>0</MapId>
+        </CurrentMission>
+      </Item>
+      <Item>
+        <MissionId>1</MissionId>
+        <CurrentMission Type="XRpgLibrary.MissionSystem.ExplorationMission">
+          <Title>Exploration mission 2</Title>
+          <Description>Just another average exploration mission</Description>
+          <TargetArea>2 5</TargetArea>
+          <AreaWidthHeight>4 8</AreaWidthHeight>
+          <MapId>0</MapId>
+        </CurrentMission>
+      </Item>
+    </AllMissions>
+  </Asset>
+</XnaContent>
