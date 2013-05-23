@@ -1,7 +1,7 @@
 Zombocalypse
 ============
 ///////////////////////////////////////////
-[LT]:
+LT:
 ///////////////////////////////////////////
 Žaidimas Zombocalypse yra izometrinis veiksmo vaidmeninimis žaidimas.
 
@@ -16,7 +16,7 @@ Rasti būda kaip uždaryti skrynia.
 Pakeliui kovojote su žemo lygio monstrais (zombiais ir pan), pamišusiais žmonėmis, kurie nori, jog pasaulis būtų išvalytas ir aišku susitinkate su kiekvienu iš savo buvusiu draugų, kurie yra valdomi skrynios.
 
 ///////////////////////////////////////////
-[EN]: 
+EN: 
 ///////////////////////////////////////////
 Zombocalypse is an isometric action rpg.
 
@@ -37,5 +37,5 @@ Zombocalypse_Game -> ZombocalypseRevised -> ZombocalypseRevised.exe
 ///////////////////////////////////////////
 Licenzija/ Copyright stuff:
 //////////////////////////////////////////
-[LT]: Žaidimas yra nemokamas. Jo kodas gali būti parsisiūstas ir modifikuojamas laisvai.
-[EN]: Game is free. You can download source code and modify it freely.
+LT: Žaidimas yra nemokamas. Jo kodas gali būti parsisiūstas ir modifikuojamas laisvai.
+EN: Game is free. You can download source code and modify it freely.
