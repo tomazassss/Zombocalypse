@@ -32,7 +32,7 @@ Along the way you fight with low level monsters ( zombies, etc.), psychopats, wh
 ///////////////////////////////////////////
 Žaidimo paleidimas/ Running the game:
 //////////////////////////////////////////
-ZombocalypseRevised -> ZombocalypseRevised -> ZombocalypseRevised -> bin -> x86 -> Debug -> ZombocalypseRevised.exe
+Zombocalypse_Game -> ZombocalypseRevised -> ZombocalypseRevised.exe
 
 ///////////////////////////////////////////
 Licenzija/ Copyright stuff:
