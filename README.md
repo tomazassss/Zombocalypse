@@ -34,6 +34,7 @@ Along the way you fight with low level monsters ( zombies, etc.), psychopats, wh
 ///////////////////////////////////////////
 Žaidimo paleidimas/ Running the game:
 //////////////////////////////////////////
+
 Zombocalypse_Game -> ZombocalypseRevised -> ZombocalypseRevised.exe
 
 ///////////////////////////////////////////
@@ -41,4 +42,5 @@ Licenzija/ Copyright stuff:
 //////////////////////////////////////////
 
 LT: Žaidimas yra nemokamas. Jo kodas gali būti parsisiūstas ir modifikuojamas laisvai.
+
 EN: Game is free. You can download source code and modify it freely.
