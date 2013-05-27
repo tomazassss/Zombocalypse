@@ -1,22 +1,22 @@
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\cursor.xnb
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\grid.xnb
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\GridIso.xnb
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\cursor.png
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\grid.png
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\GridIso.png
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\MapEditor.exe
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\MapEditor.pdb
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\XRPGLibrary.dll
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\XRPGLibrary.pdb
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.Forms.FormDeleteLayer.resources
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.Forms.FormDeleteTileSet.resources
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.Forms.FormNewLayer.resources
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.Forms.FormNewMap.resources
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.Forms.FormMain.resources
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.Forms.FormNewTileset.resources
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\GenerateResource.read.1.tlog
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\GenerateResource.write.1.tlog
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.exe
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.pdb
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\cursor.xnb
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\grid.xnb
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\GridIso.xnb
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\cursor.png
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\grid.png
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\GridIso.png
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\MapEditor.exe
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\MapEditor.pdb
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\XRPGLibrary.dll
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\XRPGLibrary.pdb
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.Forms.FormDeleteLayer.resources
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.Forms.FormDeleteTileSet.resources
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.Forms.FormNewLayer.resources
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.Forms.FormNewMap.resources
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.Forms.FormMain.resources
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.Forms.FormNewTileset.resources
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.exe
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\obj\x86\Debug\MapEditor.pdb

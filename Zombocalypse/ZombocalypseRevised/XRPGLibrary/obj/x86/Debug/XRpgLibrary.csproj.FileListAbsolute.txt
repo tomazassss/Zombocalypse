@@ -1,12 +1,6 @@
-C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.dll
-C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.pdb
-C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\XRpgLibrary.csprojResolveAssemblyReference.cache
-C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\XRPGLibrary.dll
-C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\XRPGLibrary.pdb
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.dll
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.pdb
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\XRPGLibrary.dll
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\XRPGLibrary.pdb
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.dll
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.pdb
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\XRPGLibrary.dll
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\XRPGLibrary.pdb

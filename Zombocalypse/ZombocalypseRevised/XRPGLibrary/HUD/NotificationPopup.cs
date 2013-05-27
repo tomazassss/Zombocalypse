@@ -66,7 +66,7 @@ namespace ZombocalypseRevised.HUD
         {
             if (font != null && text != "")
             {
-                spriteBatch.DrawString(font, text, position, Color.Red);
+                spriteBatch.DrawString(font, text, position, Color.Orange);
             }
         }
 

@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Backgrounds\titlescreen.xnb</Output>
-      <Time>2013-03-06T18:51:25.7890981+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Backgrounds\titlescreen.xnb</Output>
+      <Time>2013-05-26T20:02:31.6056016+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\leftarrowUp.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\leftarrowUp.xnb</Output>
-      <Time>2013-03-01T21:58:51+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\leftarrowUp.xnb</Output>
+      <Time>2013-05-26T20:02:32.3076028+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\rightarrowUp.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\rightarrowUp.xnb</Output>
-      <Time>2013-03-01T21:58:51+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\rightarrowUp.xnb</Output>
+      <Time>2013-05-26T20:02:32.3076028+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\stopBar.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\stopBar.xnb</Output>
-      <Time>2013-03-01T21:58:51+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\stopBar.xnb</Output>
+      <Time>2013-05-26T20:02:32.2452027+03:00</Time>
     </Item>
     <Item>
       <Source>TileSets\tileset1.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\tileset1.xnb</Output>
-      <Time>2013-03-01T21:58:51+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\tileset1.xnb</Output>
+      <Time>2013-05-26T20:02:33.9300056+03:00</Time>
     </Item>
     <Item>
       <Source>TileSets\tileset2.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\tileset2.xnb</Output>
-      <Time>2013-03-01T21:58:51+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\tileset2.xnb</Output>
+      <Time>2013-05-26T20:02:33.9300056+03:00</Time>
     </Item>
     <Item>
       <Source>TileSets\grassland_tiles.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\grassland_tiles.xnb</Output>
-      <Time>2013-03-01T21:58:51+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\grassland_tiles.xnb</Output>
+      <Time>2013-05-26T20:02:33.9144056+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Buttons\SelectedButton.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\SelectedButton.xnb</Output>
-      <Time>2013-03-03T16:39:47+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\SelectedButton.xnb</Output>
+      <Time>2013-05-26T20:02:31.7616019+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Buttons\Start.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\Start.xnb</Output>
-      <Time>2013-03-03T16:41:04+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\Start.xnb</Output>
+      <Time>2013-05-26T20:02:31.7616019+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Buttons\Exit.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\Exit.xnb</Output>
-      <Time>2013-03-03T16:34:35+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\Exit.xnb</Output>
+      <Time>2013-05-26T20:02:31.7304019+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Buttons\Load.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\Load.xnb</Output>
-      <Time>2013-03-03T16:40:46+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\Load.xnb</Output>
+      <Time>2013-05-26T20:02:31.7460019+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\armor.png</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\armor.xnb</Output>
-      <Time>2013-03-04T21:22:18+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\armor.xnb</Output>
+      <Time>2013-05-26T20:02:31.839602+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\boots.png</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\boots.xnb</Output>
-      <Time>2013-03-04T21:22:18+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\boots.xnb</Output>
+      <Time>2013-05-26T20:02:31.8552021+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\helmet.png</Source>
@@ -124,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\helmet.xnb</Output>
-      <Time>2013-03-04T21:22:18+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\helmet.xnb</Output>
+      <Time>2013-05-26T20:02:32.0580024+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\leggings.png</Source>
@@ -133,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\leggings.xnb</Output>
-      <Time>2013-03-04T21:22:18+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\leggings.xnb</Output>
+      <Time>2013-05-26T20:02:32.0736024+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\shield.png</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\shield.xnb</Output>
-      <Time>2013-03-04T21:22:18+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\shield.xnb</Output>
+      <Time>2013-05-26T20:02:32.0736024+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\weapon.png</Source>
@@ -151,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\weapon.xnb</Output>
-      <Time>2013-03-04T21:22:18+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\weapon.xnb</Output>
+      <Time>2013-05-26T20:02:32.0892025+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\equipment_background.png</Source>
@@ -160,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\equipment_background.xnb</Output>
-      <Time>2013-03-09T00:30:29+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\equipment_background.xnb</Output>
+      <Time>2013-05-26T20:02:32.1984026+03:00</Time>
     </Item>
     <Item>
       <Source>PlayerSprites\T_Vlad_Sword_Walking_48x48.png</Source>
@@ -169,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\PlayerSprites\T_Vlad_Sword_Walking_48x48.xnb</Output>
-      <Time>2013-03-03T23:18:05+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\PlayerSprites\T_Vlad_Sword_Walking_48x48.xnb</Output>
+      <Time>2013-05-26T20:02:33.6648051+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\inventory_background.png</Source>
@@ -178,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\inventory_background.xnb</Output>
-      <Time>2013-03-23T22:48:59+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\inventory_background.xnb</Output>
+      <Time>2013-05-26T20:02:32.2296027+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\night_vision_goggles.png</Source>
@@ -187,8 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\night_vision_goggles.xnb</Output>
-      <Time>2013-03-11T20:28:21+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\night_vision_goggles.xnb</Output>
+      <Time>2013-05-26T20:02:32.0736024+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\barrel_bottom.png</Source>
@@ -196,8 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\barrel_bottom.xnb</Output>
-      <Time>2013-03-11T20:28:21+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\barrel_bottom.xnb</Output>
+      <Time>2013-05-26T20:02:31.8552021+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\desert_eagle.png</Source>
@@ -205,8 +205,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\desert_eagle.xnb</Output>
-      <Time>2013-03-11T20:28:21+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\desert_eagle.xnb</Output>
+      <Time>2013-05-26T20:02:31.9956023+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\jeans.png</Source>
@@ -214,8 +214,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\jeans.xnb</Output>
-      <Time>2013-03-11T20:28:21+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\jeans.xnb</Output>
+      <Time>2013-05-26T20:02:32.0580024+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\kevlar_vest.png</Source>
@@ -223,8 +223,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\kevlar_vest.xnb</Output>
-      <Time>2013-03-11T20:28:21+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\kevlar_vest.xnb</Output>
+      <Time>2013-05-26T20:02:32.0736024+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\farmers_boots.png</Source>
@@ -232,8 +232,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\farmers_boots.xnb</Output>
-      <Time>2013-03-11T20:28:21+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\farmers_boots.xnb</Output>
+      <Time>2013-05-26T20:02:32.0580024+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Tooltip\tooltip_border.png</Source>
@@ -241,8 +241,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border.xnb</Output>
-      <Time>2013-03-11T22:37:57+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border.xnb</Output>
+      <Time>2013-05-26T20:02:32.1672026+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Tooltip\tooltip_background.png</Source>
@@ -250,8 +250,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_background.xnb</Output>
-      <Time>2013-03-11T22:37:57+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_background.xnb</Output>
+      <Time>2013-05-26T20:02:32.1672026+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Tooltip\tooltip_border_v2.png</Source>
@@ -259,8 +259,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border_v2.xnb</Output>
-      <Time>2013-03-20T21:53:19+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border_v2.xnb</Output>
+      <Time>2013-05-26T20:02:32.1828026+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Tooltip\tooltip_border_v3.png</Source>
@@ -268,8 +268,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border_v3.xnb</Output>
-      <Time>2013-03-20T21:53:19+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border_v3.xnb</Output>
+      <Time>2013-05-26T20:02:32.1984026+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Tooltip\tooltip_border_v4.png</Source>
@@ -277,8 +277,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border_v4.xnb</Output>
-      <Time>2013-03-20T21:53:19+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border_v4.xnb</Output>
+      <Time>2013-05-26T20:02:32.1984026+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Tooltip\tooltip_border_v5.png</Source>
@@ -286,8 +286,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border_v5.xnb</Output>
-      <Time>2013-03-20T21:53:19+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\tooltip_border_v5.xnb</Output>
+      <Time>2013-05-26T20:02:32.1984026+03:00</Time>
     </Item>
     <Item>
       <Source>TileSets\TileSet_Grass_64_32.png</Source>
@@ -295,8 +295,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Grass_64_32.xnb</Output>
-      <Time>2013-03-25T17:42:04+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Grass_64_32.xnb</Output>
+      <Time>2013-05-26T20:02:33.7584053+03:00</Time>
     </Item>
     <Item>
       <Source>TileSets\TileSet_Objects2_64_96.png</Source>
@@ -304,8 +304,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Objects2_64_96.xnb</Output>
-      <Time>2013-03-25T17:42:04+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Objects2_64_96.xnb</Output>
+      <Time>2013-05-26T20:02:33.8208054+03:00</Time>
     </Item>
     <Item>
       <Source>TileSets\TileSet_Objects_64_64.png</Source>
@@ -313,8 +313,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Objects_64_64.xnb</Output>
-      <Time>2013-03-25T17:42:04+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Objects_64_64.xnb</Output>
+      <Time>2013-05-26T20:02:33.8208054+03:00</Time>
     </Item>
     <Item>
       <Source>TileSets\TileSet_Platform_64_64.png</Source>
@@ -322,8 +322,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Platform_64_64.xnb</Output>
-      <Time>2013-03-25T17:42:04+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Platform_64_64.xnb</Output>
+      <Time>2013-05-26T20:02:33.8364054+03:00</Time>
     </Item>
     <Item>
       <Source>TileSets\TileSet_WallWater_64_64.png</Source>
@@ -331,8 +331,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_WallWater_64_64.xnb</Output>
-      <Time>2013-03-25T17:42:04+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_WallWater_64_64.xnb</Output>
+      <Time>2013-05-26T20:02:33.8832055+03:00</Time>
     </Item>
     <Item>
       <Source>TileSets\TileSet_Wall_64_96.png</Source>
@@ -340,8 +340,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Wall_64_96.xnb</Output>
-      <Time>2013-03-25T17:42:04+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Wall_64_96.xnb</Output>
+      <Time>2013-05-26T20:02:33.8988055+03:00</Time>
     </Item>
     <Item>
       <Source>TileSets\TileSet_Water_64_32.png</Source>
@@ -349,8 +349,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Water_64_32.xnb</Output>
-      <Time>2013-03-25T17:42:04+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Water_64_32.xnb</Output>
+      <Time>2013-05-26T20:02:33.8988055+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\bullet.png</Source>
@@ -358,8 +358,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\bullet.xnb</Output>
-      <Time>2013-03-26T23:26:46+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\bullet.xnb</Output>
+      <Time>2013-05-26T20:02:31.8708021+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Misc\ScrollBar\scroller.png</Source>
@@ -367,8 +367,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Misc\ScrollBar\scroller.xnb</Output>
-      <Time>2013-03-27T22:30:53+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Misc\ScrollBar\scroller.xnb</Output>
+      <Time>2013-05-26T20:02:32.2296027+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Misc\ScrollBar\scrollerTrack.png</Source>
@@ -376,8 +376,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Misc\ScrollBar\scrollerTrack.xnb</Output>
-      <Time>2013-03-27T22:30:53+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Misc\ScrollBar\scrollerTrack.xnb</Output>
+      <Time>2013-05-26T20:02:32.2296027+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Items\desert_eagle_ammo.png</Source>
@@ -385,8 +385,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\desert_eagle_ammo.xnb</Output>
-      <Time>2013-04-06T19:47:34+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Items\desert_eagle_ammo.xnb</Output>
+      <Time>2013-05-26T20:02:32.0112023+03:00</Time>
     </Item>
     <Item>
       <Source>EnemySprites\GreenZombie.png</Source>
@@ -394,8 +394,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\GreenZombie.xnb</Output>
-      <Time>2013-04-03T23:50:34+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\GreenZombie.xnb</Output>
+      <Time>2013-05-26T20:02:31.6680017+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Tooltip\border-v6.png</Source>
@@ -403,8 +403,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\border-v6.xnb</Output>
-      <Time>2013-04-07T14:26:56+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\border-v6.xnb</Output>
+      <Time>2013-05-26T20:02:32.0892025+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Inventory\Tooltip\background-v2.png</Source>
@@ -412,8 +412,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\background-v2.xnb</Output>
-      <Time>2013-04-07T14:26:56+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Inventory\Tooltip\background-v2.xnb</Output>
+      <Time>2013-05-26T20:02:32.0892025+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Buttons\button_hover.png</Source>
@@ -421,8 +421,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\button_hover.xnb</Output>
-      <Time>2013-04-07T14:26:56+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Buttons\button_hover.xnb</Output>
+      <Time>2013-05-26T20:02:31.824002+03:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\new_titlescreen.jpg</Source>
@@ -430,8 +430,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Backgrounds\new_titlescreen.xnb</Output>
-      <Time>2013-04-07T23:16:46+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Backgrounds\new_titlescreen.xnb</Output>
+      <Time>2013-05-26T20:02:31.5744016+03:00</Time>
     </Item>
     <Item>
       <Source>Backgrounds\tomo_titlescreen.png</Source>
@@ -439,8 +439,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Backgrounds\tomo_titlescreen.xnb</Output>
-      <Time>2013-04-07T23:18:41+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Backgrounds\tomo_titlescreen.xnb</Output>
+      <Time>2013-05-26T20:02:31.6524017+03:00</Time>
     </Item>
     <Item>
       <Source>PlayerSprites\T_Vlad_Gun_Walking.png</Source>
@@ -448,8 +448,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\PlayerSprites\T_Vlad_Gun_Walking.xnb</Output>
-      <Time>2013-04-20T21:08:45.9850573+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\PlayerSprites\T_Vlad_Gun_Walking.xnb</Output>
+      <Time>2013-05-26T20:02:33.6492051+03:00</Time>
     </Item>
     <Item>
       <Source>EnemySprites\GreenZombie_Disintegrate.png</Source>
@@ -457,8 +457,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\GreenZombie_Disintegrate.xnb</Output>
-      <Time>2013-04-21T13:06:30.1508696+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\GreenZombie_Disintegrate.xnb</Output>
+      <Time>2013-05-26T20:02:31.6836018+03:00</Time>
     </Item>
     <Item>
       <Source>EnemySprites\GreenZombie_BeenHit.png</Source>
@@ -466,8 +466,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\GreenZombie_BeenHit.xnb</Output>
-      <Time>2013-04-21T13:06:30.119869+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\GreenZombie_BeenHit.xnb</Output>
+      <Time>2013-05-26T20:02:31.6836018+03:00</Time>
     </Item>
     <Item>
       <Source>EnemySprites\GreenZombie_Attack.png</Source>
@@ -475,8 +475,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\GreenZombie_Attack.xnb</Output>
-      <Time>2013-04-20T18:43:38+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\GreenZombie_Attack.xnb</Output>
+      <Time>2013-05-26T20:02:31.6680017+03:00</Time>
     </Item>
     <Item>
       <Source>GUI\Misc\bullet_trail.png</Source>
@@ -484,8 +484,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Misc\bullet_trail.xnb</Output>
-      <Time>2013-04-21T14:49:36.2676765+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\GUI\Misc\bullet_trail.xnb</Output>
+      <Time>2013-05-26T20:02:32.2452027+03:00</Time>
     </Item>
     <Item>
       <Source>PlayerSprites\Vlad_Shooting.png</Source>
@@ -493,8 +493,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\PlayerSprites\Vlad_Shooting.xnb</Output>
-      <Time>2013-04-22T21:58:16+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\PlayerSprites\Vlad_Shooting.xnb</Output>
+      <Time>2013-05-26T20:02:33.7584053+03:00</Time>
     </Item>
     <Item>
       <Source>NPCSprites\Professor_Reading.png</Source>
@@ -502,8 +502,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\NPCSprites\Professor_Reading.xnb</Output>
-      <Time>2013-04-24T22:14:53+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\NPCSprites\Professor_Reading.xnb</Output>
+      <Time>2013-05-26T20:02:33.6492051+03:00</Time>
     </Item>
     <Item>
       <Source>NPCSprites\Professor_Talking.png</Source>
@@ -511,8 +511,89 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\NPCSprites\Professor_Talking.xnb</Output>
-      <Time>2013-04-24T22:14:53+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\NPCSprites\Professor_Talking.xnb</Output>
+      <Time>2013-05-26T20:02:33.6492051+03:00</Time>
+    </Item>
+    <Item>
+      <Source>TileSets\TileSet_House_64_144.png</Source>
+      <Name>TileSets\TileSet_House_64_144</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_House_64_144.xnb</Output>
+      <Time>2013-05-26T20:02:33.7740053+03:00</Time>
+    </Item>
+    <Item>
+      <Source>TileSets\TileSet_Tombs_224_192.png</Source>
+      <Name>TileSets\TileSet_Tombs_224_192</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Tombs_224_192.xnb</Output>
+      <Time>2013-05-26T20:02:33.8520055+03:00</Time>
+    </Item>
+    <Item>
+      <Source>TileSets\TileSet_Trees_128_112.png</Source>
+      <Name>TileSets\TileSet_Trees_128_112</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Trees_128_112.xnb</Output>
+      <Time>2013-05-26T20:02:33.8520055+03:00</Time>
+    </Item>
+    <Item>
+      <Source>TileSets\TileSet_Trees_128_160.png</Source>
+      <Name>TileSets\TileSet_Trees_128_160</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Trees_128_160.xnb</Output>
+      <Time>2013-05-26T20:02:33.8676055+03:00</Time>
+    </Item>
+    <Item>
+      <Source>TileSets\TileSet_Trees_128_192.png</Source>
+      <Name>TileSets\TileSet_Trees_128_192</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Trees_128_192.xnb</Output>
+      <Time>2013-05-26T20:02:33.8676055+03:00</Time>
+    </Item>
+    <Item>
+      <Source>TileSets\TileSet_Trees_128_224.png</Source>
+      <Name>TileSets\TileSet_Trees_128_224</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Trees_128_224.xnb</Output>
+      <Time>2013-05-26T20:02:33.8676055+03:00</Time>
+    </Item>
+    <Item>
+      <Source>TileSets\TileSet_Tombs2_256_128.png</Source>
+      <Name>TileSets\TileSet_Tombs2_256_128</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\TileSets\TileSet_Tombs2_256_128.xnb</Output>
+      <Time>2013-05-26T20:02:33.8364054+03:00</Time>
+    </Item>
+    <Item>
+      <Source>EnemySprites\MisterDeath\MisterDeath_Attacking.png</Source>
+      <Name>EnemySprites\MisterDeath\MisterDeath_Attacking</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\MisterDeath\MisterDeath_Attacking.xnb</Output>
+      <Time>2013-05-26T20:26:18.0814118+03:00</Time>
+    </Item>
+    <Item>
+      <Source>EnemySprites\MisterDeath\MisterDeath_Walking.png</Source>
+      <Name>EnemySprites\MisterDeath\MisterDeath_Walking</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\EnemySprites\MisterDeath\MisterDeath_Walking.xnb</Output>
+      <Time>2013-05-26T20:26:17.9566115+03:00</Time>
     </Item>
     <Item>
       <Source>Fonts\ControlFont.spritefont</Source>
@@ -520,8 +601,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Fonts\ControlFont.xnb</Output>
-      <Time>2013-02-27T22:48:33+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Fonts\ControlFont.xnb</Output>
+      <Time>2013-05-26T20:02:31.6992018+03:00</Time>
     </Item>
     <Item>
       <Source>Fonts\ItemDataFont.spritefont</Source>
@@ -529,8 +610,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Fonts\ItemDataFont.xnb</Output>
-      <Time>2013-03-11T20:28:21+02:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Fonts\ItemDataFont.xnb</Output>
+      <Time>2013-05-26T20:02:31.6992018+03:00</Time>
     </Item>
     <Item>
       <Source>Fonts\ButtonFont.spritefont</Source>
@@ -538,8 +619,17 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Fonts\ButtonFont.xnb</Output>
-      <Time>2013-04-07T14:26:56+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Fonts\ButtonFont.xnb</Output>
+      <Time>2013-05-26T20:02:31.6836018+03:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\DamageTaken.spritefont</Source>
+      <Name>Fonts\DamageTaken</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Fonts\DamageTaken.xnb</Output>
+      <Time>2013-05-26T20:02:31.6992018+03:00</Time>
     </Item>
     <Item>
       <Source>Maps\Map1.xml</Source>
@@ -547,8 +637,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Maps\Map1.xnb</Output>
-      <Time>2013-04-23T20:06:19.0385199+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Maps\Map1.xnb</Output>
+      <Time>2013-05-26T20:02:33.0252041+03:00</Time>
     </Item>
     <Item>
       <Source>ItemData\desert_eagle.xml</Source>
@@ -556,8 +646,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\desert_eagle.xnb</Output>
-      <Time>2013-05-13T22:03:48+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\desert_eagle.xnb</Output>
+      <Time>2013-05-26T22:52:40.2585024+03:00</Time>
     </Item>
     <Item>
       <Source>ItemData\kevlar_vest.xml</Source>
@@ -565,8 +655,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\kevlar_vest.xnb</Output>
-      <Time>2013-05-13T22:03:48+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\kevlar_vest.xnb</Output>
+      <Time>2013-05-26T20:02:32.4792031+03:00</Time>
     </Item>
     <Item>
       <Source>ItemData\farmers_boots.xml</Source>
@@ -574,8 +664,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\farmers_boots.xnb</Output>
-      <Time>2013-05-13T22:03:48+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\farmers_boots.xnb</Output>
+      <Time>2013-05-26T20:02:32.4636031+03:00</Time>
     </Item>
     <Item>
       <Source>ItemData\jeans.xml</Source>
@@ -583,8 +673,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\jeans.xnb</Output>
-      <Time>2013-05-13T22:03:48+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\jeans.xnb</Output>
+      <Time>2013-05-26T20:02:32.4636031+03:00</Time>
     </Item>
     <Item>
       <Source>ItemData\night_vision_goggles.xml</Source>
@@ -592,8 +682,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\night_vision_goggles.xnb</Output>
-      <Time>2013-05-13T22:03:48+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\night_vision_goggles.xnb</Output>
+      <Time>2013-05-26T20:02:32.4792031+03:00</Time>
     </Item>
     <Item>
       <Source>ItemData\barrel_bottom.xml</Source>
@@ -601,8 +691,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\barrel_bottom.xnb</Output>
-      <Time>2013-05-13T22:03:48+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\barrel_bottom.xnb</Output>
+      <Time>2013-05-26T20:02:32.3232029+03:00</Time>
     </Item>
     <Item>
       <Source>ItemData\special_goggles.xml</Source>
@@ -610,8 +700,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\special_goggles.xnb</Output>
-      <Time>2013-05-13T22:03:48+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\special_goggles.xnb</Output>
+      <Time>2013-05-26T20:02:32.4792031+03:00</Time>
     </Item>
     <Item>
       <Source>ItemData\desert_eagle_ammo.xml</Source>
@@ -619,8 +709,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\desert_eagle_ammo.xnb</Output>
-      <Time>2013-05-13T22:03:48+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\ItemData\desert_eagle_ammo.xnb</Output>
+      <Time>2013-05-26T20:02:32.4636031+03:00</Time>
     </Item>
     <Item>
       <Source>Maps\Map_Test.xml</Source>
@@ -628,8 +718,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Maps\Map_Test.xnb</Output>
-      <Time>2013-04-18T22:17:36.1946419+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Maps\Map_Test.xnb</Output>
+      <Time>2013-05-26T20:02:33.6336051+03:00</Time>
     </Item>
     <Item>
       <Source>Missions\AllMissions.xml</Source>
@@ -637,8 +727,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Missions\AllMissions.xnb</Output>
-      <Time>2013-04-27T21:42:52+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Missions\AllMissions.xnb</Output>
+      <Time>2013-05-26T20:02:33.6336051+03:00</Time>
     </Item>
     <Item>
       <Source>Dialogues\AllDialogues.xml</Source>
@@ -646,8 +736,8 @@
       <Importer>XmlImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Dialogues\AllDialogues.xnb</Output>
-      <Time>2013-04-24T22:22:28+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Dialogues\AllDialogues.xnb</Output>
+      <Time>2013-05-26T20:02:31.6524017+03:00</Time>
     </Item>
     <Item>
       <Source>Audio\PlayerSounds\DeagleShot.WAV</Source>
@@ -655,8 +745,8 @@
       <Importer>WavImporter</Importer>
       <Processor>SoundEffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\PlayerSounds\DeagleShot.xnb</Output>
-      <Time>2013-05-01T23:40:59.4997013+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\PlayerSounds\DeagleShot.xnb</Output>
+      <Time>2013-05-26T20:02:30.8100003+03:00</Time>
     </Item>
     <Item>
       <Source>Audio\PlayerSounds\Footsteps_Grass_Faster.mp3</Source>
@@ -664,9 +754,9 @@
       <Importer>Mp3Importer</Importer>
       <Processor>SongProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\PlayerSounds\Footsteps_Grass_Faster.xnb</Output>
-      <Extra>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\PlayerSounds\Footsteps_Grass_Faster.wma</Extra>
-      <Time>2013-05-01T23:40:59.5107015+03:00</Time>
+      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\PlayerSounds\Footsteps_Grass_Faster.xnb</Output>
+      <Extra>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\Audio\PlayerSounds\Footsteps_Grass_Faster.wma</Extra>
+      <Time>2013-05-26T20:02:30.8568004+03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -674,15 +764,15 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevisedContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevisedContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevisedContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevisedContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevised\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
-        <Key>C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.dll</Key>
-        <Value>2013-05-23T22:32:20.5610365+03:00</Value>
+        <Key>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.dll</Key>
+        <Value>2013-05-26T22:53:08.1346131+03:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>

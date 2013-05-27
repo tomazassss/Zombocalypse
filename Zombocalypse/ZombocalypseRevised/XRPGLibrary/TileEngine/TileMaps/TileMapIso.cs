@@ -12,6 +12,8 @@ namespace XRPGLibrary.TileEngine.TileMaps
     {
         #region Field Region
 
+        private static readonly int MAP_SIZE_OFFSET = 3;
+
         private static int baseOffsetX;
         private static int baseOffsetY;
         private static int tileStepX;
@@ -56,13 +58,13 @@ namespace XRPGLibrary.TileEngine.TileMaps
             Point startingPoint = Engine.VectorToCellIso(camera.Position);
 
             //TODO: kažko glitchina/bugina kairę pusę kai eini žemyn
-            if (startingPoint.X > 1)
+            if (startingPoint.X > MAP_SIZE_OFFSET - 1)
             {
-                startingPoint.X -= 2;
+                startingPoint.X -= MAP_SIZE_OFFSET;
             }
-            if (startingPoint.Y > 1)
+            if (startingPoint.Y > MAP_SIZE_OFFSET - 1)
             {
-                startingPoint.Y -= 2;
+                startingPoint.Y -= MAP_SIZE_OFFSET;
             }
 
             Vector2 bottomRightCorner = new Vector2(
@@ -71,22 +73,22 @@ namespace XRPGLibrary.TileEngine.TileMaps
             Point endPoint = Engine.VectorToCellIso(bottomRightCorner);
 
             //TODO: neleisti kamerai užeiti už žemėlapio ribų
-            if (endPoint.X < mapLayers[0].Width - 2)
+            if (endPoint.X < mapLayers[0].Width - MAP_SIZE_OFFSET)
             {
-                endPoint.X += 2;
+                endPoint.X += MAP_SIZE_OFFSET;
             }
             else
             {
-                endPoint.X = mapLayers[0].Width - 2;
+                endPoint.X = mapLayers[0].Width - MAP_SIZE_OFFSET;
             }
 
-            if (endPoint.Y < mapLayers[0].Height - 2)
+            if (endPoint.Y < mapLayers[0].Height - MAP_SIZE_OFFSET)
             {
-                endPoint.Y += 2;
+                endPoint.Y += MAP_SIZE_OFFSET;
             }
             else
             {
-                endPoint.Y = mapLayers[0].Height - 2;
+                endPoint.Y = mapLayers[0].Height - MAP_SIZE_OFFSET;
             }
 
            // Console.WriteLine("Camera.Y : {0}, mapLayers[0].Height:{1}", endPoint.Y, mapLayers[0].Height);

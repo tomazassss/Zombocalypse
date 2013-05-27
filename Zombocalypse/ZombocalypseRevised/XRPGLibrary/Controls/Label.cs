@@ -9,6 +9,15 @@ namespace XRPGLibrary.Controls
 {
     public class Label : Control
     {
+        public override string Text
+        {
+            set
+            {
+                this.text = value;
+                this.size = spriteFont.MeasureString(text);
+            }
+        }
+
         #region Constructor Region
 
         public Label()

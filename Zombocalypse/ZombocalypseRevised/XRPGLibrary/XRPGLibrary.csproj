@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animations\ButtonAnimation.cs" />
+    <Compile Include="Animations\FloatTextAnimation.cs" />
     <Compile Include="Animations\SimpleAnimation.cs" />
     <Compile Include="Collisions\Algorithm\PriorityQueue.cs" />
     <Compile Include="Collisions\Algorithm\SpatialAStar.cs" />
@@ -115,6 +116,7 @@
     <Compile Include="Controls\SimpleButton.cs" />
     <Compile Include="Controls\TextArea.cs" />
     <Compile Include="DialogueSystem\AllDialogues.cs" />
+    <Compile Include="DialogueSystem\DialogueData.cs" />
     <Compile Include="DialogueSystem\DialogueInfo.cs" />
     <Compile Include="DialogueSystem\DialogueManager.cs" />
     <Compile Include="DialogueSystem\DialogueOption.cs" />
@@ -123,6 +125,7 @@
     <Compile Include="DialogueSystem\IChattable.cs" />
     <Compile Include="DialogueSystem\IInteractable.cs" />
     <Compile Include="DialogueSystem\MockNpc.cs" />
+    <Compile Include="DialogueSystem\NewMissionData.cs" />
     <Compile Include="HUD\AHUDWindow.cs" />
     <Compile Include="HUD\HUDManager.cs" />
     <Compile Include="Controls\Managers\InventoryManager.cs" />
@@ -155,6 +158,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpriteClasses\AnimatedSprite.cs" />
     <Compile Include="SpriteClasses\Animation.cs" />
+    <Compile Include="SpriteClasses\SpriteSheet.cs" />
     <Compile Include="TileEngine\Camera.cs" />
     <Compile Include="TileEngine\Engine.cs" />
     <Compile Include="TileEngine\MapLayer.cs" />

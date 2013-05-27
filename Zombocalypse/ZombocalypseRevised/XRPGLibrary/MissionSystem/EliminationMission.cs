@@ -8,7 +8,9 @@ namespace XRpgLibrary.MissionSystem
     public class EliminationMission : MissionNode
     {
         private uint eliminationCount;
-        private uint targetId;
+        private uint currentlyEliminated;
+
+        private int targetId;
 
         public override event EventHandler Success;
         public override event EventHandler Failure;
@@ -18,15 +20,37 @@ namespace XRpgLibrary.MissionSystem
             get { return eliminationCount; }
             set { this.eliminationCount = value; }
         }
-
-        public uint TargetId
+        
+        public int TargetId
         {
             get { return targetId; }
             set { this.targetId = value; }
         }
 
+        public EliminationMission()
+        {
+            this.currentlyEliminated = 0;
+        }
+
         public override void Update(object data)
         {
+            if (!(data is int))
+            {
+                return;
+            }
+
+            int eliminatedId = (int)data;
+
+            if (eliminatedId == targetId)
+            {
+                currentlyEliminated++;
+
+                if (Success != null && 
+                    currentlyEliminated >= eliminationCount)
+                {
+                    Success(successNode, null);
+                }
+            }
         }
 
         public override string ToString()

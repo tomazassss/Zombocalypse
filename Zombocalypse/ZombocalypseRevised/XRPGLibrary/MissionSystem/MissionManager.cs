@@ -16,6 +16,7 @@ namespace XRpgLibrary.MissionSystem
         private List<MissionInstance> currentMissions;
         private Queue<Point> explorationMissionData;
         private Queue<DialogueInfo> dialogueMissionData;
+        private Queue<int> eliminationMissionData;
         private Queue<uint> missionsToRemove;
         private bool hasChanged;
 
@@ -35,6 +36,7 @@ namespace XRpgLibrary.MissionSystem
             currentMissions = new List<MissionInstance>();
             explorationMissionData = new Queue<Point>();
             dialogueMissionData = new Queue<DialogueInfo>();
+            eliminationMissionData = new Queue<int>();
             missionsToRemove = new Queue<uint>();
         }
 
@@ -95,6 +97,18 @@ namespace XRpgLibrary.MissionSystem
                 }
             }
 
+            while (eliminationMissionData.Count > 0)
+            {
+                int data = eliminationMissionData.Dequeue();
+                foreach (MissionInstance mission in currentMissions)
+                {
+                    if (mission.CurrentMission is EliminationMission)
+                    {
+                        mission.Update(data);
+                    }
+                }
+            }
+
             while (missionsToRemove.Count > 0)
             {
                 uint missionId = missionsToRemove.Dequeue();
@@ -131,6 +145,11 @@ namespace XRpgLibrary.MissionSystem
                 {
                     DialogueInfo info = (DialogueInfo)sender;
                     dialogueMissionData.Enqueue(info);
+                }
+                else if (sender is int)
+                {
+                    int eliminatedId = (int)sender;
+                    eliminationMissionData.Enqueue(eliminatedId);
                 }
             }
         }

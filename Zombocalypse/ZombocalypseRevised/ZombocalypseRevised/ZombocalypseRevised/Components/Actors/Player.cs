@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using XRPGLibrary.SpriteClasses;
+using XRPGLibrary.Animations;
 
 namespace ZombocalypseRevised.Components.Actors
 {
@@ -15,7 +16,9 @@ namespace ZombocalypseRevised.Components.Actors
         #region Field Region
 
         private float armor;
-        private float health; 
+        private float health;
+
+        private float damageTaken;
        
         private Game1 gameRef;
         private Camera camera;
@@ -26,8 +29,13 @@ namespace ZombocalypseRevised.Components.Actors
 
         private bool isShooting;
         private bool eventCalled;
+        private bool isHit;
 
         public event EventHandler PlayerDead;
+
+        private SpriteFont damageTakenFont;
+        private FloatTextAnimation floatDamage;
+        private float floatDuration;
 
         #endregion
 
@@ -99,12 +107,20 @@ namespace ZombocalypseRevised.Components.Actors
         {
             this.isShooting = false;
             this.eventCalled = false;
+            this.isHit = false;
 
             this.health = 100f;
             this.armor = 0f;
 
+            this.damageTaken = 0f;
+
             gameRef = game as Game1;
             camera = new Camera(gameRef.ScreenRectangle);
+
+            this.damageTakenFont = gameRef.DamageTakenFont;
+            this.floatDamage = new FloatTextAnimation();
+            floatDamage.TextFont = damageTakenFont;
+            this.floatDuration = 2500f;
         }
 
         #endregion
@@ -123,11 +139,12 @@ namespace ZombocalypseRevised.Components.Actors
                     eventCalled = true;
                 }
             }
+            floatDamage.Update(gameTime);
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-
+            floatDamage.Draw(spriteBatch, camera.Position);
         }
 
         public override AnimatedSprite BindAnimations(Texture2D spriteSheet, int frameCount)
@@ -148,12 +165,21 @@ namespace ZombocalypseRevised.Components.Actors
                 if (temp < 0)
                 {
                     Health += temp;
+                    this.isHit = true;
+                    this.damageTaken = Math.Abs(temp);
                 }
             }
             else if (Armor <= 0)
             {
                 Health -= damage;
+                this.isHit = true;
+                this.damageTaken = damage;
             }
+            floatDamage.StartDrawing(true,
+                                   damageTaken.ToString(),
+                                   sprite.Position,
+                                   new Vector2(sprite.Position.X, sprite.Position.Y - (float)sprite.Height),
+                                   floatDuration);
         }
 
         protected virtual void OnChanged(EventArgs e)

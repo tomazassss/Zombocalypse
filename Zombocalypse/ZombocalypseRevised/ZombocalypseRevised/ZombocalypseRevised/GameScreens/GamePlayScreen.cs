@@ -26,6 +26,7 @@ using XRpgLibrary.MissionSystem;
 using XRpgLibrary.DialogueSystem;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Media;
+using ZombocalypseRevised.DialogueSystem;
 
 namespace ZombocalypseRevised.GameScreens
 {
@@ -77,6 +78,8 @@ namespace ZombocalypseRevised.GameScreens
 
         private ButtonState oldState;
 
+
+
         private CollisionsManager collisionsManager;
         //TODO: padaryti inventory manager draw/update priklausoma nuo EquipmentScreen/InventoryScreen visible/enabled
         private InventoryManager inventoryManager;
@@ -86,7 +89,10 @@ namespace ZombocalypseRevised.GameScreens
         private MissionManager missionManager;
         private DialogueManager dialogueManager;
 
+        private MissionFactory missions;
+
         private NotificationPopup notifications;
+        private GameInterface gameInterface;
 
         #endregion
 
@@ -130,50 +136,7 @@ namespace ZombocalypseRevised.GameScreens
 
         #endregion
 
-        #region XNA Method Region
-
-        public override void Initialize()
-        {
-            gameRef.IsMouseVisible = true;
-            base.Initialize();
-        }
-
-        protected override void LoadContent()
-        {
-            LoadCharacter();
-            LoadEnemies();
-            LoadNpcs();
-            LoadSounds();
-            base.LoadContent();
-            OpenMap();
-            //Load2DTileMap();
-            LoadIsoTileMap();
-            LoadGun();
-            LoadWindows();
-            LoadItems();
-            Populate(enemies);
-            oldState = new ButtonState();
-
-            MissionFactory missions = gameRef.Content.Load<MissionFactory>(@"Missions\AllMissions");
-            missionManager.AddMission(missions.GetMissionById(0));
-            missionManager.AddMission(missions.GetMissionById(1));
-
-            dialogueManager.DialogueSelected += missionManager.OnUpdateEvent;
-
-            AllDialogues allDialogues = gameRef.Content.Load<AllDialogues>(@"Dialogues\AllDialogues");
-            DialogueService.GetInstance().AllDialogues = allDialogues.Dialogues;
-
-            //commandManager.RegisterCommand(Keys.I, OpenEquipmentScreen);
-            //commandManager.RegisterCommand(Keys.U, OpenInventoryScreen);
-            commandManager.RegisterCommand(Keys.Escape, OpenPauseMenuWindow);
-            commandManager.RegisterCommand(Keys.L, OpenMissionLogWindow);
-            commandManager.RegisterCommand(Keys.E, OpenDialogueWindow);
-
-            //TODO: remove after done testing
-            //commandManager.RegisterCommand(Keys.E, PickupItem);
-        }
-
-
+        #region Window Method Region
 
         private void TestDialogueSystem()
         {
@@ -216,7 +179,7 @@ namespace ZombocalypseRevised.GameScreens
         {
             int itemNumber = RandomUtils.RANDOM.Next(0, 2);
             InventoryItem item = null;
-            
+
             switch (itemNumber)
             {
                 case 0:
@@ -237,6 +200,20 @@ namespace ZombocalypseRevised.GameScreens
         {
             stateManager.PopState();
             missionManager.Clear();
+        }
+
+        private void OpenPlayerInfoWindow()
+        {
+            IHUDWindow playerInfoWindow = hudManager.GetWindow(Window.PLAYER_INFO);
+            playerInfoWindow.Show();
+            isPaused = true;
+        }
+
+        private void ClosePlayerInfoWindow()
+        {
+            IHUDWindow playerInfoWindow = hudManager.GetWindow(Window.PLAYER_INFO);
+            playerInfoWindow.Hide();
+            isPaused = false;
         }
 
         private void OpenPauseMenuWindow()
@@ -384,6 +361,52 @@ namespace ZombocalypseRevised.GameScreens
         }
         */
 
+        #endregion
+
+        #region XNA Method Region
+
+        public override void Initialize()
+        {
+            gameRef.IsMouseVisible = true;
+            base.Initialize();
+        }
+
+        protected override void LoadContent()
+        {
+            LoadCharacter();
+            LoadNpcs();
+            LoadSounds();
+            base.LoadContent();
+            OpenMap();
+            //Load2DTileMap();
+            LoadIsoTileMap();
+            LoadGun();
+            LoadWindows();
+            LoadItems();
+            LoadEnemies();
+            oldState = new ButtonState();
+
+            missions = gameRef.Content.Load<MissionFactory>(@"Missions\AllMissions");
+            missionManager.AddMission(missions.GetMissionById(0));
+            missionManager.AddMission(missions.GetMissionById(1));
+
+            dialogueManager.DialogueSelected += missionManager.OnUpdateEvent;
+
+            AllDialogues allDialogues = gameRef.Content.Load<AllDialogues>(@"Dialogues\AllDialogues");
+            DialogueService.GetInstance().AllDialogues = allDialogues.Dialogues;
+            DialogueService.GetInstance().RegisterDialogueProcessor(OnDialogueSelected);
+
+            //commandManager.RegisterCommand(Keys.I, OpenEquipmentScreen);
+            //commandManager.RegisterCommand(Keys.U, OpenInventoryScreen);
+            commandManager.RegisterCommand(Keys.Escape, OpenPauseMenuWindow);
+            commandManager.RegisterCommand(Keys.L, OpenMissionLogWindow);
+            commandManager.RegisterCommand(Keys.E, OpenDialogueWindow);
+            commandManager.RegisterCommand(Keys.C, OpenPlayerInfoWindow);
+
+            //TODO: remove after done testing
+            //commandManager.RegisterCommand(Keys.E, PickupItem);
+        }
+
         public override void Update(GameTime gameTime)
         {
             if (drawEquipment)
@@ -403,6 +426,16 @@ namespace ZombocalypseRevised.GameScreens
 
                 foreach (NPC n in npcs)
                     n.Update(gameTime, player);
+
+                int x= enemies.Count;
+                for (int i = 0; i < x; i++)
+                {
+                    if (enemies[i].RemoveThisElement == true)
+                    {
+                        enemies.Remove(enemies[i]);
+                        x--;
+                    }
+                }
 
                 UpdateMouse();
 
@@ -438,6 +471,7 @@ namespace ZombocalypseRevised.GameScreens
                     gun.Add(direction, sprite.Origin - player.Camera.Position, 50, rotationAngle);
                     oldState = ButtonState.Released;
                     player.IsShooting = true;
+                    //Console.WriteLine(sprite.Position);
                     deagleShot.Play();
                 }
                 gun.Update(enemies);
@@ -522,6 +556,7 @@ namespace ZombocalypseRevised.GameScreens
             }
 
             popUpManager.Update(gameTime);
+            gameInterface.Update(gameTime);
             notifications.Update(gameTime);
 
             base.Update(gameTime);
@@ -533,6 +568,7 @@ namespace ZombocalypseRevised.GameScreens
 
 
             map.Draw(gameRef.SpriteBatch, player.Camera);
+            player.Draw(gameTime, gameRef.SpriteBatch);
             if (!player.IsShooting)
             {
                 sprite.Draw(gameTime, gameRef.SpriteBatch, player.Camera);
@@ -563,6 +599,7 @@ namespace ZombocalypseRevised.GameScreens
             hudManager.Draw(gameRef.SpriteBatch);
 
             popUpManager.Draw(gameTime);
+            gameInterface.Draw(gameRef.SpriteBatch);
             notifications.Draw(gameRef.SpriteBatch);
 
             DrawingUtils.SpriteBatchEnd(gameRef.SpriteBatch);
@@ -687,10 +724,10 @@ namespace ZombocalypseRevised.GameScreens
             ContentManager content = gameRef.Content;
             newMap = content.Load<MapData>(@"Maps\Map1");
             //newMap = content.Load<MapData>(@"Maps\Map_Test");
+            
             collisionsManager.SetMap(newMap);
             oMap = new ObstaclesMapGenerator(newMap);
-            foreach (Enemy e in enemies)
-                e.CreatePathFinder(oMap.Grid);
+            
         }
 
         private void LoadCharacter()
@@ -756,6 +793,7 @@ namespace ZombocalypseRevised.GameScreens
             shootingSprite = new AnimatedSprite(shootingSpriteSheet, animations);
 
             player.Sprite = sprite;
+            player.PlayerDead += OnPlayerDeath;
 
             collisionsManager.SetSpriteSpeed(sprite.Speed);
         }
@@ -763,20 +801,92 @@ namespace ZombocalypseRevised.GameScreens
         private void LoadEnemies()
         {
             enemies = new List<Enemy>();
- 
+
+            AudioEngine enemyAudioEngine = new AudioEngine(@"Content\Audio\ZombieSounds\ZombieAttack.xgs");
+            WaveBank enemyWaveBank = new WaveBank(enemyAudioEngine, @"Content\Audio\ZombieSounds\ZombieAttackWaveBank.xwb");
+
+            //2 Priesai prie tako i miesteli
+            Populate(new Vector2(376.718f, 266.718f), 2, 40, enemyAudioEngine, enemyWaveBank);
+            //8 Priesai lauke siaure rytuose nuo miestelio
+            Populate(new Vector2(2131.857f, 118.0393f), 8, 100, enemyAudioEngine, enemyWaveBank);
+            //20 Priesu lauke rytuose nuo miestelio (Boso chebra) 
+            Populate(new Vector2(2801.631f, 792.6567f), 20, 100, enemyAudioEngine, enemyWaveBank);
+
+            //Sukuriame Mister Death
+            Texture2D deathWalkingSpriteSheet = Game.Content.Load<Texture2D>(@"EnemySprites\MisterDeath\MisterDeath_Walking");
+            SpriteSheet deathWalkingSS = new SpriteSheet(deathWalkingSpriteSheet, 8);
+            Texture2D deathAttackingSpriteSheet = Game.Content.Load<Texture2D>(@"EnemySprites\MisterDeath\MisterDeath_Attacking");
+            SpriteSheet deathAttackingSS = new SpriteSheet(deathAttackingSpriteSheet, 13);
+            Death death = new Death(deathWalkingSS,
+                                    deathWalkingSS,
+                                    deathWalkingSS,
+                                    deathAttackingSS,
+                                    new Vector2(2890.631f, 792.6567f),
+                                    gameRef,
+                                    player.Camera,
+                                    enemyAudioEngine,
+                                    enemyWaveBank);
+
+            enemies.Add(death);
+
+            foreach (Enemy e in enemies)
+                e.CreatePathFinder(oMap.Grid);
+
+        }
+
+        private void CreateEnemy(Vector2 position, AudioEngine audioEngine, WaveBank waveBank)
+        {
             Texture2D zombieSpriteSheet = Game.Content.Load<Texture2D>(@"EnemySprites\GreenZombie");
+            SpriteSheet zombieSS = new SpriteSheet(zombieSpriteSheet, 8);
             Texture2D zombieDisintegrateSpriteSheet = Game.Content.Load<Texture2D>(@"EnemySprites\GreenZombie_Disintegrate");
+            SpriteSheet zombieDisintegrateSS = new SpriteSheet(zombieDisintegrateSpriteSheet, 8);
             Texture2D zombieBeenHitSpriteSheet = Game.Content.Load<Texture2D>(@"EnemySprites\GreenZombie_BeenHit");
+            SpriteSheet zombieBeenHitSS = new SpriteSheet(zombieBeenHitSpriteSheet, 8);
             Texture2D zombieAttackSpriteSheet = Game.Content.Load<Texture2D>(@"EnemySprites\GreenZombie_Attack");
-            zombie = new Zombie(zombieSpriteSheet,
-                                zombieDisintegrateSpriteSheet,
-                                zombieBeenHitSpriteSheet,
-                                zombieAttackSpriteSheet,
-                                new Vector2(100,90),
-                                gameRef, 
-                                player.Camera);
+            SpriteSheet zombieAttackSS = new SpriteSheet(zombieAttackSpriteSheet, 8);
+            zombie = new Zombie(zombieSS,
+                                zombieDisintegrateSS,
+                                zombieBeenHitSS,
+                                zombieAttackSS,
+                                position,
+                                gameRef,
+                                player.Camera,
+                                audioEngine,
+                                waveBank);
+
+            zombie.Dead += missionManager.OnUpdateEvent;
 
             enemies.Add(zombie);
+        }
+
+        private void Populate(Vector2 spawnPoint, int count, int radius, AudioEngine audioEngine, WaveBank waveBank)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                bool repeat = true;
+                while (repeat)
+                {
+                    Vector2 position = RandomPositionInCircle(spawnPoint, radius);
+                    Point pointInMap = Engine.VectorToCellIso(position);
+
+                    if (oMap.Grid[pointInMap.X, pointInMap.Y].IsWall == false)
+                    {
+                        CreateEnemy(position, audioEngine, waveBank);
+                        repeat = false;
+                    }
+                }
+            }
+        }
+
+        private Vector2 RandomPositionInCircle(Vector2 center, int radius)
+        {
+            Vector2 position = Vector2.Zero;
+            double angle = (double)RandomUtils.RANDOM.Next(0, 360);
+            int range = RandomUtils.RANDOM.Next(0, radius);
+            position = new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));
+            position *= range;
+            position += center;
+            return position;
         }
 
         private void LoadNpcs()
@@ -788,9 +898,11 @@ namespace ZombocalypseRevised.GameScreens
             EntityService.GetInstance().Npcs = chattables;
 
             Texture2D professorReadingSpriteSheet = Game.Content.Load<Texture2D>(@"NPCSprites\Professor_Reading");
+            SpriteSheet professorReadingSS = new SpriteSheet(professorReadingSpriteSheet, 13);
             Texture2D professorTalkingSpriteSheet = Game.Content.Load<Texture2D>(@"NPCSprites\Professor_Talking");
-            professor = new Professor(professorReadingSpriteSheet,
-                                        professorTalkingSpriteSheet,
+            SpriteSheet professorTalkingSS = new SpriteSheet(professorTalkingSpriteSheet, 8);
+            professor = new Professor(professorReadingSS,
+                                        professorTalkingSS,
                                         new Vector2(250, 50),
                                         gameRef,
                                         player.Camera);
@@ -807,27 +919,6 @@ namespace ZombocalypseRevised.GameScreens
             deagleShot = Game.Content.Load<SoundEffect>(@"Audio\PlayerSounds\DeagleShot");
             walkingSound = Game.Content.Load<Song>(@"Audio\PlayerSounds\Footsteps_Grass_Faster");
             MediaPlayer.IsRepeating = true;
-        }
-
-        private void Populate(List<Enemy> actors)
-        {
-            Random random = new Random();
-            foreach (Enemy e in actors)
-            {
-                bool repeat = true;
-                while (repeat)
-                {
-                    float x = (float)random.Next(0, newMap.MapWidth);
-                    float y = (float)random.Next(0, newMap.MapHeight);
-                    Point position = Engine.VectorToCellIso(new Vector2(x, y));
-
-                    if (oMap.Grid[position.X, position.Y].IsWall == false)
-                    {
-                        e.Position = new Vector2(x, y);
-                        repeat = false;
-                    }
-                }
-            }
         }
 
         private void UpdateMouse()
@@ -974,6 +1065,27 @@ namespace ZombocalypseRevised.GameScreens
             missionLogComponent.RegisterCommand(Keys.L, CloseMissionLogWindow, ClickState.RELEASED);
             missionLogComponent.RegisterCommand(Keys.Escape, CloseMissionLogWindow, ClickState.RELEASED);
             hudManager.Put(Window.MISSION_LOG, missionLogWindow);
+
+            SimpleHUDWindow playerInfoWindow = new SimpleHUDWindow(font);
+            PlayerInfoComponent playerInfoComponent = new PlayerInfoComponent(font, content, player);
+            //TODO: hardcoded size and test position
+            playerInfoWindow.Size = new Vector2(400, 300);
+
+            position = new Vector2((screenRectangle.Width - playerInfoWindow.Size.X) / 2, (screenRectangle.Height - playerInfoWindow.Size.Y) / 2);
+
+            playerInfoWindow.Position = position;
+            playerInfoWindow.Component = playerInfoComponent;
+            playerInfoWindow.BorderTexture = tooltipBorder;
+            //TODO: hardcoded title
+            playerInfoWindow.Title = "Player Stats";
+            playerInfoComponent.RegisterCommand(Keys.C, ClosePlayerInfoWindow, ClickState.RELEASED);
+            playerInfoComponent.RegisterCommand(Keys.Escape, ClosePlayerInfoWindow, ClickState.RELEASED);
+            hudManager.Put(Window.PLAYER_INFO, playerInfoWindow);
+
+            gameInterface = new GameInterface(player, font);
+            //TODO: hardcoded position
+            gameInterface.Position = new Vector2(screenRectangle.Width - 200, screenRectangle.Height - 60);
+
         }
 
         /// <summary>
@@ -1019,6 +1131,22 @@ namespace ZombocalypseRevised.GameScreens
             ChildComponents.Clear();
             isPaused = false;
             drawEquipment = false;
+        }
+
+        private void OnDialogueSelected(object sender, EventArgs args)
+        {
+            if (!(sender is NewMissionData))
+            {
+                return;
+            }
+
+            NewMissionData newMission = (NewMissionData)sender;
+            missionManager.AddMission(missions.GetMissionById(newMission.MissionId));
+        }
+
+        private void OnPlayerDeath(object sender, EventArgs args)
+        {
+            stateManager.ChangeState(gameRef.GameOverScreen);
         }
 
         #endregion

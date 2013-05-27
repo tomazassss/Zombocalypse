@@ -17,14 +17,15 @@ namespace ZombocalypseRevised.Components.Actors
 
         #region Constructor Region
 
-        public Zombie(Texture2D moveSprite, Texture2D deathSprite, Texture2D hitSprite, Texture2D attackSprite,
-            Vector2 position, Game game, Camera cam) 
+        public Zombie(SpriteSheet moveSprite, SpriteSheet deathSprite, SpriteSheet hitSprite, SpriteSheet attackSprite,
+            Vector2 position, Game game, Camera cam, AudioEngine audioEngine, WaveBank waveBank) 
         : base(moveSprite, deathSprite, hitSprite, attackSprite, position, game, cam)
         {
             Id = 1;
             Damage = 50f;
-            EnemyAttack = new AudioEngine(@"Content\Audio\ZombieSounds\ZombieAttack.xgs");
-            EnemyAttackWaveBank = new WaveBank(EnemyAttack, @"Content\Audio\ZombieSounds\ZombieAttackWaveBank.xwb");
+            Sprite.Speed = 1.5f;
+            EnemyAttack = audioEngine;
+            EnemyAttackWaveBank = waveBank;
             EnemyAttackSoundBank = new SoundBank(EnemyAttack, @"Content\Audio\ZombieSounds\ZombieAttackSoundBank.xsb");
             DeathCue = "Zombie_Long_Death";
             AttackCue = "Zombie_Attack";

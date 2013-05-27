@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.Xna.Framework;
 using XRPGLibrary.Util;
+using Microsoft.Xna.Framework.Content;
 
 namespace XRpgLibrary.DialogueSystem
 {
@@ -14,8 +15,10 @@ namespace XRpgLibrary.DialogueSystem
 		private DialogueInfo dialogueInfo;
 		private IChattable chattable;
         private bool isRepeatable;
+        private DialogueData additionalData;
 
 		public event EventHandler Selected;
+        public event EventHandler ProccessAdditionalData;
 
 		public string ChatOption
 		{
@@ -46,6 +49,13 @@ namespace XRpgLibrary.DialogueSystem
             get { return isRepeatable; }
             set { this.isRepeatable = value; }
         }
+
+        [ContentSerializer(Optional=true)]
+        public DialogueData AdditionalData
+        {
+            get { return additionalData; }
+            set { this.additionalData = value; }
+        }
 		
 		public void AttachChattable(IChattable chattable)
 		{
@@ -60,7 +70,6 @@ namespace XRpgLibrary.DialogueSystem
 				
 				foreach(DialogueInfo info in successorInfo)
 				{
-                    //TODO: naujas dialogas nebutinai priskiriamas tam paciam veikejui. reikia padaryti klase, kuri surastu atitinkama NPC
 					DialogueOption option = DialogueService.GetInstance().GetDialogue(info);
                     IChattable npc = EntityService.GetInstance().GetNpcById(info.NpcId);
 					npc.AddDialogue(option);
@@ -71,6 +80,11 @@ namespace XRpgLibrary.DialogueSystem
 			{
 				Selected(dialogueInfo, null);
 			}
+
+            if (ProccessAdditionalData != null && additionalData != null)
+            {
+                ProccessAdditionalData(additionalData, null);
+            }
 		}
 
         public override bool Equals(object obj)

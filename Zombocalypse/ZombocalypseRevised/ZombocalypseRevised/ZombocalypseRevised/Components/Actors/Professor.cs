@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using XRPGLibrary.TileEngine;
+using XRPGLibrary.SpriteClasses;
 
 namespace ZombocalypseRevised.Components.Actors
 {
@@ -12,7 +13,7 @@ namespace ZombocalypseRevised.Components.Actors
     {
         #region Constructor Region
 
-            public Professor(Texture2D readSprite, Texture2D talkSprite, Vector2 position, Game game, Camera cam) 
+        public Professor(SpriteSheet readSprite, SpriteSheet talkSprite, Vector2 position, Game game, Camera cam) 
             : base(readSprite, talkSprite, position, game, cam)
             {
 

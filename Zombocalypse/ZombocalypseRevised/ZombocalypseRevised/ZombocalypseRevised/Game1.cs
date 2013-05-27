@@ -43,6 +43,7 @@ namespace ZombocalypseRevised
         private GamePlayScreen gamePlayScreen;
         private EquipmentScreen equipmentScreen;
         private InventoryScreen inventoryScreen;
+        private GameOverScreen gameOverScreen;
 
         #endregion
 
@@ -59,6 +60,8 @@ namespace ZombocalypseRevised
         private int _total_frames = 0;
         private float _elapsed_time = 0.0f;
         private int _fps = 0;
+
+        private SpriteFont damageTakenFont;
 
         #region Property Region
 
@@ -102,9 +105,21 @@ namespace ZombocalypseRevised
             set { this.inventoryScreen = value; }
         }
 
+        public GameOverScreen GameOverScreen
+        {
+            get { return gameOverScreen; }
+            set { gameOverScreen = value; }
+        }
+
         public GameStateManager StateManager
         {
             get { return this.stateManager; }
+        }
+
+        public SpriteFont DamageTakenFont
+        {
+            get { return damageTakenFont; }
+            set { damageTakenFont = value; }
         }
 
         #endregion
@@ -133,6 +148,8 @@ namespace ZombocalypseRevised
 
             titleScreen = new TitleScreen(this, stateManager);
             startMenuScreen = new StartMenuScreen(this, stateManager);
+            gameOverScreen = new GameOverScreen(this, stateManager, screenRectangle);
+
 
             stateManager.ChangeState(titleScreen);
         }
@@ -160,6 +177,8 @@ namespace ZombocalypseRevised
         protected override void LoadContent()
         {
             _spr_font = Content.Load<SpriteFont>(@"Fonts\ItemDataFont");
+
+            damageTakenFont = Content.Load<SpriteFont>(@"Fonts\DamageTaken");
 
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);

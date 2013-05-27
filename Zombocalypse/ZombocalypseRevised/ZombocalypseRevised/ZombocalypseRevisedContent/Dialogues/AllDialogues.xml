@@ -52,7 +52,7 @@
         </Key>
         <Value>
           <ChatOption>There must be a way to stop this.</ChatOption>
-          <Response>There is none that i know of. You screwed up. Big time.</Response>
+          <Response>There is none that i know of. You screwed up. Big time. Although, you could try asking the folks down this path. But you need make your way past these "people".</Response>
           <DialogueInfo>
             <DialogueId>2</DialogueId>
             <NpcId>0</NpcId>
@@ -60,6 +60,9 @@
           <SuccessorInfo>
           </SuccessorInfo>
           <IsRepeatable>false</IsRepeatable>
+          <AdditionalData Type="XRpgLibrary.DialogueSystem.NewMissionData">
+            <MissionId>2</MissionId>
+          </AdditionalData>
         </Value>
       </Item>
     </Dialogues>

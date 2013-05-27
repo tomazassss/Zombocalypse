@@ -24,6 +24,9 @@ using ZombocalypseRevised.Components.Actors;
 using XRPGLibrary.Collisions;
 using XRpgLibrary.MissionSystem;
 using XRpgLibrary.DialogueSystem;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Media;
+using ZombocalypseRevised.DialogueSystem;
 
 namespace ZombocalypseRevised.GameScreens
 {
@@ -52,17 +55,30 @@ namespace ZombocalypseRevised.GameScreens
 
         private Zombie zombie;
 
+        private Professor professor;
+
         private List<Enemy> enemies;
+
+        private List<NPC> npcs;
+
+        private List<IChattable> chattables;
 
         private MapData newMap;
 
+        private ObstaclesMapGenerator oMap;
+
         private AnimatedSprite sprite;
         private AnimatedSprite shootingSprite;
+
+        private SoundEffect deagleShot;
+        private Song walkingSound;
 
         private bool isPaused;
         private bool drawEquipment;
 
         private ButtonState oldState;
+
+
 
         private CollisionsManager collisionsManager;
         //TODO: padaryti inventory manager draw/update priklausoma nuo EquipmentScreen/InventoryScreen visible/enabled
@@ -72,6 +88,10 @@ namespace ZombocalypseRevised.GameScreens
         private PopUpManager popUpManager;
         private MissionManager missionManager;
         private DialogueManager dialogueManager;
+
+        private MissionFactory missions;
+
+        private NotificationPopup notifications;
 
         #endregion
 
@@ -126,65 +146,75 @@ namespace ZombocalypseRevised.GameScreens
         protected override void LoadContent()
         {
             LoadCharacter();
-            LoadEnemies();
+            LoadNpcs();
+            LoadSounds();
             base.LoadContent();
             OpenMap();
             //Load2DTileMap();
             LoadIsoTileMap();
+            LoadGun();
             LoadWindows();
             LoadItems();
-
+            LoadEnemies();
             oldState = new ButtonState();
 
-            MissionFactory missions = gameRef.Content.Load<MissionFactory>(@"Missions\AllMissions");
+            missions = gameRef.Content.Load<MissionFactory>(@"Missions\AllMissions");
             missionManager.AddMission(missions.GetMissionById(0));
             missionManager.AddMission(missions.GetMissionById(1));
+
+            dialogueManager.DialogueSelected += missionManager.OnUpdateEvent;
+
+            AllDialogues allDialogues = gameRef.Content.Load<AllDialogues>(@"Dialogues\AllDialogues");
+            DialogueService.GetInstance().AllDialogues = allDialogues.Dialogues;
+            DialogueService.GetInstance().RegisterDialogueProcessor(OnDialogueSelected);
 
             //commandManager.RegisterCommand(Keys.I, OpenEquipmentScreen);
             //commandManager.RegisterCommand(Keys.U, OpenInventoryScreen);
             commandManager.RegisterCommand(Keys.Escape, OpenPauseMenuWindow);
             commandManager.RegisterCommand(Keys.L, OpenMissionLogWindow);
-            commandManager.RegisterCommand(Keys.Enter, TestDialogueSystem);
+            commandManager.RegisterCommand(Keys.E, OpenDialogueWindow);
+            commandManager.RegisterCommand(Keys.C, OpenPlayerInfoWindow);
 
             //TODO: remove after done testing
-            commandManager.RegisterCommand(Keys.E, PickupItem);
+            //commandManager.RegisterCommand(Keys.E, PickupItem);
         }
+
+
 
         private void TestDialogueSystem()
         {
-            ContentManager content = gameRef.Content;
+            foreach (NPC npc in npcs)
+            {
+                if (npc.canInteract())
+                {
+                    ContentManager content = gameRef.Content;
 
-            Texture2D tooltipBackground = content.Load<Texture2D>(@"GUI\Inventory\Tooltip\background-v2");
-            Texture2D tooltipBorder = content.Load<Texture2D>(@"GUI\Inventory\Tooltip\border-v6");
-            AllDialogues allDialogues = content.Load<AllDialogues>(@"Dialogues\AllDialogues");
-            DialogueService.GetInstance().AllDialogues = allDialogues.Dialogues;
-            SpriteFont font = content.Load<SpriteFont>(@"Fonts\ItemDataFont");
+                    Texture2D tooltipBackground = content.Load<Texture2D>(@"GUI\Inventory\Tooltip\background-v2");
+                    Texture2D tooltipBorder = content.Load<Texture2D>(@"GUI\Inventory\Tooltip\border-v6");
+                    SpriteFont font = content.Load<SpriteFont>(@"Fonts\ItemDataFont");
 
-            DialogueInfo info = new DialogueInfo();
-            info.DialogueId = 0;
-            info.NpcId = 0;
+                    Rectangle screenRectangle = gameRef.ScreenRectangle;
+                    SimpleHUDWindow dialogueWindow = new SimpleHUDWindow(font);
+                    DialogueComponent dialogueComponent = new DialogueComponent(font, gameRef.Content, npc);
+                    dialogueComponent.RegisterCommand(Keys.Escape, CloseDialogueWindow, ClickState.RELEASED);
+                    dialogueComponent.RegisterCommand(Keys.E, CloseDialogueWindow, ClickState.RELEASED);
 
+                    dialogueWindow.Size = new Vector2(screenRectangle.Width * (2f / 3f), (screenRectangle.Height / 2f) - 100);
+                    dialogueWindow.Position = new Vector2(
+                        (screenRectangle.Width - dialogueWindow.Size.X) / 2f,
+                        screenRectangle.Height / 2f + (screenRectangle.Height / 2f - dialogueWindow.Size.Y) / 2f);
+                    dialogueWindow.Title = professor.Name;
+                    dialogueWindow.BorderTexture = tooltipBorder;
 
-            MockNpc npc = new MockNpc("Tomas");
-            npc.AddDialogue(DialogueService.GetInstance().GetDialogue(info));         
+                    dialogueWindow.Component = dialogueComponent;
+                    dialogueWindow.Show();
+                    dialogueComponent.DialogueSelected += dialogueManager.OnSelected;
 
-            Rectangle screenRectangle = gameRef.ScreenRectangle;
-            SimpleHUDWindow dialogueWindow = new SimpleHUDWindow(font);
-            DialogueComponent dialogueComponent = new DialogueComponent(font, gameRef.Content, npc);
-
-            dialogueWindow.Size = new Vector2(screenRectangle.Width * (2f / 3f), (screenRectangle.Height / 2f) - 100);
-            dialogueWindow.Position = new Vector2(
-                (screenRectangle.Width - dialogueWindow.Size.X) / 2f,
-                screenRectangle.Height / 2f + (screenRectangle.Height / 2f - dialogueWindow.Size.Y) / 2f);
-            dialogueWindow.Title = npc.Name;
-            dialogueWindow.BorderTexture = tooltipBorder;
-
-            dialogueWindow.Component = dialogueComponent;
-            dialogueWindow.Show();
-            dialogueComponent.DialogueSelected += dialogueManager.OnSelected;
-
-            hudManager.Put(Window.DIALOG, dialogueWindow);
-            isPaused = true;
+                    hudManager.Put(Window.DIALOGUE, dialogueWindow);
+                    isPaused = true;
+                    break;
+                }
+            }
         }
 
         //TODO: remove after done testing
@@ -213,6 +243,20 @@ namespace ZombocalypseRevised.GameScreens
         {
             stateManager.PopState();
             missionManager.Clear();
+        }
+
+        private void OpenPlayerInfoWindow()
+        {
+            IHUDWindow playerInfoWindow = hudManager.GetWindow(Window.PLAYER_INFO);
+            playerInfoWindow.Show();
+            isPaused = true;
+        }
+
+        private void ClosePlayerInfoWindow()
+        {
+            IHUDWindow playerInfoWindow = hudManager.GetWindow(Window.PLAYER_INFO);
+            playerInfoWindow.Hide();
+            isPaused = false;
         }
 
         private void OpenPauseMenuWindow()
@@ -246,6 +290,33 @@ namespace ZombocalypseRevised.GameScreens
         private void ClosePauseMenuWindow()
         {
             ClosePauseMenuWindow(null, null);
+        }
+
+        private void OpenDialogueWindow()
+        {
+            TestDialogueSystem();
+        }
+
+        private void CloseDialogueWindow()
+        {
+            IHUDWindow dialogueWindow = hudManager.GetWindow(Window.DIALOGUE);
+            dialogueWindow.Hide();
+            isPaused = false;
+        }
+
+        private void ChangePlayerStats(object sender, EventArgs args)
+        {
+            if (!(sender is Stats))
+            {
+                return;
+            }
+            else
+            {
+                Stats stats = (Stats)sender;
+
+                player.Armor = stats.Armor;
+                gun.Damage = stats.Damage;
+            }
         }
 
         /*
@@ -332,7 +403,7 @@ namespace ZombocalypseRevised.GameScreens
             }
         }
         */
-         
+
         public override void Update(GameTime gameTime)
         {
             if (drawEquipment)
@@ -349,6 +420,19 @@ namespace ZombocalypseRevised.GameScreens
 
                 foreach (Enemy e in enemies)
                     e.Update(gameTime, player);
+
+                foreach (NPC n in npcs)
+                    n.Update(gameTime, player);
+
+                int x= enemies.Count;
+                for (int i = 0; i < x; i++)
+                {
+                    if (enemies[i].RemoveThisElement == true)
+                    {
+                        enemies.Remove(enemies[i]);
+                        x--;
+                    }
+                }
 
                 UpdateMouse();
 
@@ -384,11 +468,18 @@ namespace ZombocalypseRevised.GameScreens
                     gun.Add(direction, sprite.Origin - player.Camera.Position, 50, rotationAngle);
                     oldState = ButtonState.Released;
                     player.IsShooting = true;
+                    //Console.WriteLine(sprite.Position);
+                    deagleShot.Play();
                 }
                 gun.Update(enemies);
 
                 if (motion != Vector2.Zero)
                 {
+                    if (MediaPlayer.State != MediaState.Playing)
+                    {
+                        MediaPlayer.Play(walkingSound);
+
+                    }
                     if (!player.IsShooting)
                     {
                         sprite.IsAnimating = true;
@@ -423,6 +514,7 @@ namespace ZombocalypseRevised.GameScreens
                 }
                 else
                 {
+                    MediaPlayer.Stop();
                     //sprite.IsAnimating = false;
                     //shootingSprite.IsAnimating = false;
                     if (!player.IsShooting)
@@ -461,6 +553,7 @@ namespace ZombocalypseRevised.GameScreens
             }
 
             popUpManager.Update(gameTime);
+            notifications.Update(gameTime);
 
             base.Update(gameTime);
         }
@@ -471,6 +564,7 @@ namespace ZombocalypseRevised.GameScreens
 
 
             map.Draw(gameRef.SpriteBatch, player.Camera);
+            player.Draw(gameTime, gameRef.SpriteBatch);
             if (!player.IsShooting)
             {
                 sprite.Draw(gameTime, gameRef.SpriteBatch, player.Camera);
@@ -483,6 +577,9 @@ namespace ZombocalypseRevised.GameScreens
 
             foreach (Enemy e in enemies)
                 e.Draw(gameTime, gameRef.SpriteBatch);
+
+            foreach (NPC n in npcs)
+                n.Draw(gameTime, gameRef.SpriteBatch);
 
             base.Draw(gameTime);
             
@@ -498,6 +595,7 @@ namespace ZombocalypseRevised.GameScreens
             hudManager.Draw(gameRef.SpriteBatch);
 
             popUpManager.Draw(gameTime);
+            notifications.Draw(gameRef.SpriteBatch);
 
             DrawingUtils.SpriteBatchEnd(gameRef.SpriteBatch);
         }
@@ -621,7 +719,10 @@ namespace ZombocalypseRevised.GameScreens
             ContentManager content = gameRef.Content;
             newMap = content.Load<MapData>(@"Maps\Map1");
             //newMap = content.Load<MapData>(@"Maps\Map_Test");
+            
             collisionsManager.SetMap(newMap);
+            oMap = new ObstaclesMapGenerator(newMap);
+            
         }
 
         private void LoadCharacter()
@@ -694,7 +795,23 @@ namespace ZombocalypseRevised.GameScreens
         private void LoadEnemies()
         {
             enemies = new List<Enemy>();
- 
+
+            AudioEngine enemyAudioEngine = new AudioEngine(@"Content\Audio\ZombieSounds\ZombieAttack.xgs");
+            WaveBank enemyWaveBank = new WaveBank(enemyAudioEngine, @"Content\Audio\ZombieSounds\ZombieAttackWaveBank.xwb");
+
+            //2 Priesai prie tako i miesteli
+            Populate(new Vector2(376.718f, 266.718f), 2, 40, enemyAudioEngine, enemyWaveBank);
+            //8 Priesai lauke siaure rytuose nuo miestelio
+            Populate(new Vector2(2131.857f, 118.0393f), 8, 100, enemyAudioEngine, enemyWaveBank);
+            //20 Priesu lauke rytuose nuo miestelio (Boso chebra) 
+            Populate(new Vector2(2801.631f, 792.6567f), 20, 100, enemyAudioEngine, enemyWaveBank);
+
+            foreach (Enemy e in enemies)
+                e.CreatePathFinder(oMap.Grid);
+        }
+
+        private void CreateEnemy(Vector2 position, AudioEngine audioEngine, WaveBank waveBank)
+        {
             Texture2D zombieSpriteSheet = Game.Content.Load<Texture2D>(@"EnemySprites\GreenZombie");
             Texture2D zombieDisintegrateSpriteSheet = Game.Content.Load<Texture2D>(@"EnemySprites\GreenZombie_Disintegrate");
             Texture2D zombieBeenHitSpriteSheet = Game.Content.Load<Texture2D>(@"EnemySprites\GreenZombie_BeenHit");
@@ -703,11 +820,75 @@ namespace ZombocalypseRevised.GameScreens
                                 zombieDisintegrateSpriteSheet,
                                 zombieBeenHitSpriteSheet,
                                 zombieAttackSpriteSheet,
-                                new Vector2(100,90),
-                                gameRef, 
-                                player.Camera);
+                                position,
+                                gameRef,
+                                player.Camera,
+                                audioEngine,
+                                waveBank);
+
+            zombie.Dead += missionManager.OnUpdateEvent;
 
             enemies.Add(zombie);
+        }
+
+        private void Populate(Vector2 spawnPoint, int count, int radius, AudioEngine audioEngine, WaveBank waveBank)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                bool repeat = true;
+                while (repeat)
+                {
+                    Vector2 position = RandomPositionInCircle(spawnPoint, radius);
+                    Point pointInMap = Engine.VectorToCellIso(position);
+
+                    if (oMap.Grid[pointInMap.X, pointInMap.Y].IsWall == false)
+                    {
+                        CreateEnemy(position, audioEngine, waveBank);
+                        repeat = false;
+                    }
+                }
+            }
+        }
+
+        private Vector2 RandomPositionInCircle(Vector2 center, int radius)
+        {
+            Vector2 position = Vector2.Zero;
+            double angle = (double)RandomUtils.RANDOM.Next(0, 360);
+            int range = RandomUtils.RANDOM.Next(0, radius);
+            position = new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));
+            position *= range;
+            position += center;
+            return position;
+        }
+
+        private void LoadNpcs()
+        {
+            npcs = new List<NPC>();
+
+            //Needed for dialogue system. A hack pretty much...
+            chattables = new List<IChattable>();
+            EntityService.GetInstance().Npcs = chattables;
+
+            Texture2D professorReadingSpriteSheet = Game.Content.Load<Texture2D>(@"NPCSprites\Professor_Reading");
+            Texture2D professorTalkingSpriteSheet = Game.Content.Load<Texture2D>(@"NPCSprites\Professor_Talking");
+            professor = new Professor(professorReadingSpriteSheet,
+                                        professorTalkingSpriteSheet,
+                                        new Vector2(250, 50),
+                                        gameRef,
+                                        player.Camera);
+            //TODO: Hardcoded ID
+            professor.Id = 0;
+            professor.Name = "Zweistein";
+
+            npcs.Add(professor);
+            chattables.Add(professor);
+        }
+
+        private void LoadSounds()
+        {
+            deagleShot = Game.Content.Load<SoundEffect>(@"Audio\PlayerSounds\DeagleShot");
+            walkingSound = Game.Content.Load<Song>(@"Audio\PlayerSounds\Footsteps_Grass_Faster");
+            MediaPlayer.IsRepeating = true;
         }
 
         private void UpdateMouse()
@@ -801,6 +982,11 @@ namespace ZombocalypseRevised.GameScreens
             ContentManager content = Game.Content;
             SpriteFont font = content.Load<SpriteFont>(@"Fonts\ItemDataFont");
 
+            notifications = NotificationPopup.GetInstance();
+            notifications.Font = font;
+            notifications.Size = new Vector2(300, 0);
+            notifications.Position = new Vector2((screenRectangle.Width - notifications.Size.X) / 2, screenRectangle.Height * (3f / 4f));
+
             Texture2D tooltipBackground = content.Load<Texture2D>(@"GUI\Inventory\Tooltip\background-v2");
             Texture2D tooltipBorder = content.Load<Texture2D>(@"GUI\Inventory\Tooltip\border-v6");
 
@@ -831,20 +1017,9 @@ namespace ZombocalypseRevised.GameScreens
             commandManager.RegisterCommand(Keys.U, inventoryEquipmentWindow.ShowInventory);
             inventoryEquipmentWindow.RegisterCommand(Keys.I, inventoryEquipmentWindow.ToggleEquipment);
             inventoryEquipmentWindow.RegisterCommand(Keys.U, inventoryEquipmentWindow.ToggleInventory);
-
-            //TODO: Idėta testavimui. Vėliau turės būti nuskaitomi iš failo or something
-            Texture2D helmetTexture = content.Load<Texture2D>(@"GUI\Inventory\Items\night_vision_goggles");
-            Item nightVisionGoggles = content.Load<Item>(@"ItemData\night_vision_goggles");
-            //Pekeičia nuskaitytą string tipą į ItemKind tipą.
-            nightVisionGoggles.ConvertType();
-
-            Rectangle itemRectangle = new Rectangle(0, 0, 0, 0);
-
-            helmet = new InventoryItem(helmetTexture, itemRectangle, tooltipBorder, tooltipBackground);
-            helmet.ItemData = nightVisionGoggles;
-            helmet.Font = font;
-            inventoryEquipmentWindow.AddItemToInventory(helmet);
-
+            inventoryEquipmentWindow.RegisterCommand(Keys.Escape, inventoryEquipmentWindow.Close);
+            inventoryEquipmentWindow.RegisterStatChangeEvent(ChangePlayerStats);
+            
             SimpleHUDWindow missionLogWindow = new SimpleHUDWindow(font);
             MissionLogComponent missionLogComponent = new MissionLogComponent(font, gameRef.Content);
             //TODO: hardcoded position and size
@@ -858,7 +1033,25 @@ namespace ZombocalypseRevised.GameScreens
             //TODO: hardcoded title
             missionLogWindow.Title = "Mission Log";
             missionLogComponent.RegisterCommand(Keys.L, CloseMissionLogWindow, ClickState.RELEASED);
+            missionLogComponent.RegisterCommand(Keys.Escape, CloseMissionLogWindow, ClickState.RELEASED);
             hudManager.Put(Window.MISSION_LOG, missionLogWindow);
+
+            SimpleHUDWindow playerInfoWindow = new SimpleHUDWindow(font);
+            PlayerInfoComponent playerInfoComponent = new PlayerInfoComponent(font, content, player);
+            //TODO: hardcoded size and test position
+            playerInfoWindow.Size = new Vector2(400, 300);
+
+            position = new Vector2((screenRectangle.Width - playerInfoWindow.Size.X) / 2, (screenRectangle.Height - playerInfoWindow.Size.Y) / 2);
+
+            playerInfoWindow.Position = position;
+            playerInfoWindow.Component = playerInfoComponent;
+            playerInfoWindow.BorderTexture = tooltipBorder;
+            //TODO: hardcoded title
+            playerInfoWindow.Title = "Player Stats";
+            playerInfoComponent.RegisterCommand(Keys.C, ClosePlayerInfoWindow, ClickState.RELEASED);
+            playerInfoComponent.RegisterCommand(Keys.Escape, ClosePlayerInfoWindow, ClickState.RELEASED);
+            hudManager.Put(Window.PLAYER_INFO, playerInfoWindow);
+
         }
 
         /// <summary>
@@ -887,6 +1080,11 @@ namespace ZombocalypseRevised.GameScreens
 
             boots = ItemFactory.CreateItem("farmers_boots");
             inventory.EquipItem(boots);
+        }
+
+        private void LoadGun()
+        {
+            ContentManager content = gameRef.Content;
 
             //TODO: perkelk kitur, kai baigsi saudymo sistema
             Texture2D bulletTexture = content.Load<Texture2D>(@"GUI\Inventory\Items\bullet");
@@ -899,6 +1097,17 @@ namespace ZombocalypseRevised.GameScreens
             ChildComponents.Clear();
             isPaused = false;
             drawEquipment = false;
+        }
+
+        private void OnDialogueSelected(object sender, EventArgs args)
+        {
+            if (!(sender is NewMissionData))
+            {
+                return;
+            }
+
+            NewMissionData newMission = (NewMissionData)sender;
+            missionManager.AddMission(missions.GetMissionById(newMission.MissionId));
         }
 
         #endregion

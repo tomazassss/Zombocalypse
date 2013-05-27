@@ -58,7 +58,7 @@ namespace ZombocalypseRevised.Components
             this.magazine = new List<Bullet>();
             this.bulletTexture = texture;
             this.bulletTrail = trail;
-            this.range = 7;
+            this.range = 4;
             this.accuracy = 0.0f;
             this.damage = 10f;
         }
@@ -79,13 +79,14 @@ namespace ZombocalypseRevised.Components
                     b.Update();
                     for (int j = 0; j < enemies.Count; j++)
                     {
-                        if (enemies[j] != null)
+                        if (enemies[j] != null && enemies[j].Health > 0)
                         {
                             if (b.BoundingBox.Intersects(enemies[j].BoundingBox))
                             {
                                 if (IntersectsPixel(b.BoundingBox, b.TextureData, enemies[j].BoundingBox, enemies[j].TextureData) == true)
                                 {
                                     enemies[j].Health -= Damage;
+                                    enemies[j].TakeDamage(Damage);
                                     enemies[j].BeenHit = true;
                                     beenHit = true;
                                     continue;
@@ -94,6 +95,7 @@ namespace ZombocalypseRevised.Components
                                 if (Collides(b.Position.X, b.Position.Y, delta.X, delta.Y, enemies[j].BoundingBox))
                                 {
                                     enemies[j].Health -= Damage;
+                                    enemies[j].TakeDamage(Damage);
                                     enemies[j].BeenHit = true;
                                     beenHit = true;
                                 }

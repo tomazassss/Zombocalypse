@@ -77,7 +77,7 @@ namespace MapEditor.Forms
                     tbLayerName.Text,
                     LayerWidth,
                     LayerHeight,
-                    (int)nudLayerLevel.Value);
+                    (int)nudLayerLevel.Value, -1, -1);
             }
 
             okPressed = true;

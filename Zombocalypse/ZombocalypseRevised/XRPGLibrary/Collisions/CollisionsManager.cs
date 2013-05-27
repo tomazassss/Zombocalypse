@@ -58,22 +58,43 @@ namespace XRPGLibrary.Collisions
             float x = 0;
             float y = 0;
 
+            //if (motion.Y > 0)
+            //{
+            //    y = BottomCollisionDetection(motion, currentPosition, currentCellPosition);
+            //}
+            //else if (motion.Y < 0)
+            //{
+            //    y = TopCollisionDetection(motion, currentPosition, currentCellPosition);
+            //}
+
+            //if (motion.X > 0)
+            //{
+            //    x = RightCollisionDetection(motion, currentPosition, currentCellPosition);
+            //}
+            //else if (motion.X < 0)
+            //{
+            //    x = LeftCollisionDetection(motion, currentPosition, currentCellPosition);
+            //}
+
+            float x1 = 0;
+            float y1 = 0;
+
             if (motion.Y > 0)
             {
-                y = BottomCollisionDetection(motion, currentPosition, currentCellPosition);
+                y1 = BottomCollisionDetection(motion, currentPosition, currentCellPosition);
             }
             else if (motion.Y < 0)
             {
-                y = TopCollisionDetection(motion, currentPosition, currentCellPosition);
+                y1 = TopCollisionDetection(motion, currentPosition, currentCellPosition);
             }
 
             if (motion.X > 0)
             {
-                x = RightCollisionDetection(motion, currentPosition, currentCellPosition);
+                x1 = RightCollisionDetection(motion, currentPosition, currentCellPosition);
             }
             else if (motion.X < 0)
             {
-                x = LeftCollisionDetection(motion, currentPosition, currentCellPosition);
+                x1 = LeftCollisionDetection(motion, currentPosition, currentCellPosition);
             }
 
             //Istrizos kliutys, darbas su x asimi
@@ -97,6 +118,10 @@ namespace XRPGLibrary.Collisions
             finalPosition = spritePosition;
             if (x != 0)
                 finalPosition.X = x;
+            else if (x1 != 0)
+            {
+                finalPosition.X = x1;
+            }
             else
             {
                 Vector2 tempPosition = finalPosition;
@@ -149,6 +174,10 @@ namespace XRPGLibrary.Collisions
 
             if (y != 0)
                 finalPosition.Y = y;
+            else if (y1 != 0)
+            {
+                finalPosition.Y = y1;
+            }
             else
             {
                 Vector2 tempPosition = finalPosition;
@@ -171,8 +200,6 @@ namespace XRPGLibrary.Collisions
                     }
                 }
 
-
-
                 //finalPosition.Y += motion.Y * spriteSpeed;
             }
             return finalPosition;
@@ -190,10 +217,10 @@ namespace XRPGLibrary.Collisions
                     TileData tileBelowLeft = map.Layers[i].GetTile(currentCellPosition.X - 1, currentCellPosition.Y + 2);  
                     TileData tileBelowRight = map.Layers[i].GetTile(currentCellPosition.X + 1, currentCellPosition.Y + 2);
 
-                    //if (tileBelow.TileIndex != -1 && tileBelow.TileSetIndex != -1 &&
-                    //    tileBelowLeft.TileIndex != -1 && tileBelowLeft.TileSetIndex != -1 &&
-                    //    tileBelowRight.TileIndex != -1 && tileBelowRight.TileSetIndex != -1 &&
-                    //    map.Layers[i].LayerLevel == 0 || map.Layers[i].LayerLevel % 2 == 1)
+                    if (ObstaclesCheckCancel(tileBelowLeft, tileBelow, tileBelowRight, i))
+                    {
+                        continue;
+                    }
                     if (ObstaclesCheck(tileBelowLeft, tileBelow, tileBelowRight, i))
                     {
                         for (int j = map.Layers.Length - 1; j >= 0; j--)
@@ -229,6 +256,12 @@ namespace XRPGLibrary.Collisions
                                 testMoveY -= 40;
                                 return testMoveY;
                             }
+
+                            if (CheckAnomaly(tileLeft, tileRight, j))
+                            {
+                                testMoveY = 0;
+                                return testMoveY;
+                            }
                         }
                     }
                     else if (CancelCheck(tileBelowLeft, tileBelow, tileBelowRight))
@@ -246,10 +279,11 @@ namespace XRPGLibrary.Collisions
                     TileData tileBelow = map.Layers[i].GetTile(currentCellPosition.X, currentCellPosition.Y + 2);
                     TileData tileBelowLeft = map.Layers[i].GetTile(currentCellPosition.X - 1, currentCellPosition.Y + 2);
                     TileData tileBelowRight = map.Layers[i].GetTile(currentCellPosition.X + 1, currentCellPosition.Y + 2);
-                    //if (tileBelow.TileIndex != -1 && tileBelow.TileSetIndex != -1 &&
-                    //    tileBelowLeft.TileIndex != -1 && tileBelowLeft.TileSetIndex != -1 &&
-                    //    tileBelowRight.TileIndex != -1 && tileBelowRight.TileSetIndex != -1 &&
-                    //    map.Layers[i].LayerLevel == 0 || map.Layers[i].LayerLevel % 2 == 1)
+
+                    if (ObstaclesCheckCancel(tileBelowLeft, tileBelow, tileBelowRight, i))
+                    {
+                        continue;
+                    }
                     if (ObstaclesCheck(tileBelowLeft, tileBelow, tileBelowRight, i))
                     {
                         for (int j = map.Layers.Length - 1; j >= 0; j--)
@@ -285,6 +319,12 @@ namespace XRPGLibrary.Collisions
                                 testMoveY -= 40;
                                 return testMoveY;
                             }
+
+                            if (CheckAnomaly(tileLeft, tileRight, j))
+                            {
+                                testMoveY = 0;
+                                return testMoveY;
+                            }
                         }
                     }
                     else if (CancelCheck(tileBelowLeft, tileBelow, tileBelowRight))
@@ -309,10 +349,10 @@ namespace XRPGLibrary.Collisions
                     TileData tileTopLeft = map.Layers[i].GetTile(currentCellPosition.X - 1, currentCellPosition.Y - 2);
                     TileData tileTopRight = map.Layers[i].GetTile(currentCellPosition.X + 1, currentCellPosition.Y - 2);
 
-                    //if (tileBelow.TileIndex != -1 && tileBelow.TileSetIndex != -1 &&
-                    //    tileBelowLeft.TileIndex != -1 && tileBelowLeft.TileSetIndex != -1 &&
-                    //    tileBelowRight.TileIndex != -1 && tileBelowRight.TileSetIndex != -1 &&
-                    //    map.Layers[i].LayerLevel == 0 || map.Layers[i].LayerLevel % 2 == 1)
+                    if (ObstaclesCheckCancel(tileTopLeft, tileTop, tileTopRight, i))
+                    {
+                        continue;
+                    }
                     if (ObstaclesCheck(tileTopLeft, tileTop, tileTopRight, i))
                     {
                         //Console.WriteLine("Nelyg");
@@ -350,6 +390,12 @@ namespace XRPGLibrary.Collisions
                                 testMoveY -= 40;
                                 return testMoveY;
                             }
+
+                            if (CheckAnomaly(tileLeft, tileRight, j))
+                            {
+                                testMoveY = 0;
+                                return testMoveY;
+                            }
                         }
                     }
                     else if (CancelCheck(tileTopLeft, tileTop, tileTopRight))
@@ -367,10 +413,11 @@ namespace XRPGLibrary.Collisions
                     TileData tileTop = map.Layers[i].GetTile(currentCellPosition.X, currentCellPosition.Y - 2);
                     TileData tileTopLeft = map.Layers[i].GetTile(currentCellPosition.X - 1, currentCellPosition.Y - 2);
                     TileData tileTopRight = map.Layers[i].GetTile(currentCellPosition.X + 1, currentCellPosition.Y - 2);
-                    //if (tileBelow.TileIndex != -1 && tileBelow.TileSetIndex != -1 &&
-                    //    tileBelowLeft.TileIndex != -1 && tileBelowLeft.TileSetIndex != -1 &&
-                    //    tileBelowRight.TileIndex != -1 && tileBelowRight.TileSetIndex != -1 &&
-                    //    map.Layers[i].LayerLevel == 0 || map.Layers[i].LayerLevel % 2 == 1)
+
+                    if (ObstaclesCheckCancel(tileTopLeft, tileTop, tileTopRight, i))
+                    {
+                        continue;
+                    }
                     if (ObstaclesCheck(tileTopLeft, tileTop, tileTopRight, i))
                     {
                         //Console.WriteLine("Lyg");
@@ -407,6 +454,12 @@ namespace XRPGLibrary.Collisions
                                 testMoveY -= 40;
                                 return testMoveY;
                             }
+
+                            if (CheckAnomaly(tileLeft, tileRight, j))
+                            {
+                                testMoveY = 0;
+                                return testMoveY;
+                            }
                         }
                     }
                     else if (CancelCheck(tileTopLeft, tileTop, tileTopRight))
@@ -432,10 +485,10 @@ namespace XRPGLibrary.Collisions
                     TileData tileRight = map.Layers[i].GetTile(currentCellPosition.X + 1, currentCellPosition.Y);
                     TileData tileBelowRight = map.Layers[i].GetTile(currentCellPosition.X + 1, currentCellPosition.Y + 2);
 
-                    //if (tileAboveRight.TileIndex != -1 && tileAboveRight.TileSetIndex != -1 &&
-                    //    tileRight.TileIndex != -1 && tileRight.TileSetIndex != -1 &&
-                    //    tileBelowRight.TileIndex != -1 && tileBelowRight.TileSetIndex != -1 &&
-                    //    map.Layers[i].LayerLevel == 0 || map.Layers[i].LayerLevel % 2 == 1)
+                    if (ObstaclesCheckCancel(tileAboveRight, tileRight, tileBelowRight, i))
+                    {
+                        continue;
+                    }
                     if (ObstaclesCheck(tileAboveRight, tileRight, tileBelowRight, i))
                     {
                         //Console.WriteLine("Nelyg");
@@ -473,6 +526,12 @@ namespace XRPGLibrary.Collisions
                                 testMoveX -= 24;
                                 return testMoveX;
                             }
+
+                            if (CheckAnomaly(tileRAbove, tileRBelow, j))
+                            {
+                                testMoveX = 0;
+                                return testMoveX;
+                            }
                         }
                     }
                     else if (CancelCheck(tileAboveRight, tileRight, tileBelowRight))
@@ -491,10 +550,10 @@ namespace XRPGLibrary.Collisions
                     TileData tileRight = map.Layers[i].GetTile(currentCellPosition.X + 1, currentCellPosition.Y);
                     TileData tileBelowRight = map.Layers[i].GetTile(currentCellPosition.X + 1, currentCellPosition.Y + 2);
 
-                    //if (tileAboveRight.TileIndex != -1 && tileAboveRight.TileSetIndex != -1 &&
-                    //    tileRight.TileIndex != -1 && tileRight.TileSetIndex != -1 &&
-                    //    tileBelowRight.TileIndex != -1 && tileBelowRight.TileSetIndex != -1 &&
-                    //    map.Layers[i].LayerLevel == 0 || map.Layers[i].LayerLevel % 2 == 1)
+                    if (ObstaclesCheckCancel(tileAboveRight, tileRight, tileBelowRight, i))
+                    {
+                        continue;
+                    }
                     if (ObstaclesCheck(tileAboveRight, tileRight, tileBelowRight, i))
                     {
                         //Console.WriteLine("Lyg");
@@ -531,6 +590,12 @@ namespace XRPGLibrary.Collisions
                                 testMoveX -= 24;
                                 return testMoveX;
                             }
+
+                            if (CheckAnomaly(tileRAbove, tileRBelow, j))
+                            {
+                                testMoveX = 0;
+                                return testMoveX;
+                            }
                         }
                     }
                     else if (CancelCheck(tileAboveRight, tileRight, tileBelowRight))
@@ -557,10 +622,10 @@ namespace XRPGLibrary.Collisions
                     TileData tileLeft = map.Layers[i].GetTile(currentCellPosition.X - 1, currentCellPosition.Y);
                     TileData tileBelowLeft = map.Layers[i].GetTile(currentCellPosition.X - 1, currentCellPosition.Y + 2);
 
-                    //if (tileAboveLeft.TileIndex != -1 && tileAboveLeft.TileSetIndex != -1 &&
-                    //    tileLeft.TileIndex != -1 && tileLeft.TileSetIndex != -1 &&
-                    //    tileBelowLeft.TileIndex != -1 && tileBelowLeft.TileSetIndex != -1 &&
-                    //    map.Layers[i].LayerLevel == 0 || map.Layers[i].LayerLevel % 2 == 1)
+                    if (ObstaclesCheckCancel(tileAboveLeft, tileLeft, tileBelowLeft, i))
+                    {
+                        continue;
+                    }
                     if (ObstaclesCheck(tileAboveLeft, tileLeft, tileBelowLeft, i))
                     {
                         //Console.WriteLine("Nelyg");
@@ -597,6 +662,12 @@ namespace XRPGLibrary.Collisions
                                 testMoveX -= 24;
                                 return testMoveX;
                             }
+
+                            if (CheckAnomaly(tileLAbove, tileLBelow, j))
+                            {
+                                testMoveX = 0;
+                                return testMoveX;
+                            }
                         }
                     }
                     else if (CancelCheck(tileAboveLeft, tileLeft, tileBelowLeft))
@@ -615,10 +686,10 @@ namespace XRPGLibrary.Collisions
                     TileData tileLeft = map.Layers[i].GetTile(currentCellPosition.X - 1, currentCellPosition.Y);
                     TileData tileBelowLeft = map.Layers[i].GetTile(currentCellPosition.X - 1, currentCellPosition.Y + 2);
 
-                    //if (tileAboveLeft.TileIndex != -1 && tileAboveLeft.TileSetIndex != -1 &&
-                    //    tileLeft.TileIndex != -1 && tileLeft.TileSetIndex != -1 &&
-                    //    tileBelowLeft.TileIndex != -1 && tileBelowLeft.TileSetIndex != -1 &&
-                    //    map.Layers[i].LayerLevel == 0 || map.Layers[i].LayerLevel % 2 == 1)
+                    if (ObstaclesCheckCancel(tileAboveLeft, tileLeft, tileBelowLeft, i))
+                    {
+                        continue;
+                    }
                     if (ObstaclesCheck(tileAboveLeft, tileLeft, tileBelowLeft, i))
                     {
                         //Console.WriteLine("Lyg");
@@ -653,6 +724,12 @@ namespace XRPGLibrary.Collisions
                                     testMoveX = maxX;
                                 }
                                 testMoveX -= 24;
+                                return testMoveX;
+                            }
+
+                            if (CheckAnomaly(tileLAbove, tileLBelow, j))
+                            {
+                                testMoveX = 0;
                                 return testMoveX;
                             }
                         }
@@ -1253,10 +1330,21 @@ namespace XRPGLibrary.Collisions
             if (tileL.TileIndex != -1 && tileL.TileSetIndex != -1 &&
                 tile.TileIndex != -1 && tile.TileSetIndex != -1 &&
                 tileR.TileIndex != -1 && tileR.TileSetIndex != -1 &&
-                map.Layers[i].LayerLevel == 0 || map.Layers[i].LayerLevel % 2 == 1)
+                map.Layers[i].LayerLevel == 0 || map.Layers[i].LayerLevel % 2 == 1 || map.Layers[i].LayerLevel == -1)
                 isObstacle = true;
 
             return isObstacle;
+        }
+
+        private bool ObstaclesCheckCancel(TileData tileL, TileData tile, TileData tileR, int i)
+        {
+            bool notObstacle = false;
+            if (tileL.TileIndex == -1 && tileL.TileSetIndex == -1 &&
+                tile.TileIndex == -1 && tile.TileSetIndex == -1 &&
+                tileR.TileIndex == -1 && tileR.TileSetIndex == -1 &&
+                map.Layers[i].LayerLevel == -1)
+                notObstacle = true;
+            return notObstacle;
         }
 
         //private bool ObstaclesCheck(TileData tileL, TileData tile, TileData tileR, int i)
@@ -1305,6 +1393,24 @@ namespace XRPGLibrary.Collisions
                 isFilled = true;
 
             return isFilled;
+        }
+
+        private bool CheckAnomaly(TileData tile1, TileData tile2, int j)
+        {
+            bool cancel = false;
+            if ((tile1.TileIndex != -1 && tile1.TileSetIndex != -1 &&
+                tile2.TileIndex == -1 && tile2.TileSetIndex == -1) &&
+                map.Layers[j].LayerLevel % 2 == 0 && map.Layers[j].LayerLevel != 0)
+            {
+                cancel = true;
+            }
+            if ((tile1.TileIndex == -1 && tile1.TileSetIndex == -1 &&
+                tile2.TileIndex != -1 && tile2.TileSetIndex != -1) &&
+                map.Layers[j].LayerLevel % 2 == 0 && map.Layers[j].LayerLevel != 0)
+            {
+                cancel = true;
+            }
+            return cancel;
         }
         #endregion
     }

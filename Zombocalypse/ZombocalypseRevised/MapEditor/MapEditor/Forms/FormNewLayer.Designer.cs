@@ -180,6 +180,11 @@
             // nudLayerLevel
             // 
             this.nudLayerLevel.Location = new System.Drawing.Point(120, 37);
+            this.nudLayerLevel.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            -2147483648});
             this.nudLayerLevel.Name = "nudLayerLevel";
             this.nudLayerLevel.Size = new System.Drawing.Size(100, 20);
             this.nudLayerLevel.TabIndex = 8;

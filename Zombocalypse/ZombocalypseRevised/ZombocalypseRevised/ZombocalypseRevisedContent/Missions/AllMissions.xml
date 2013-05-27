@@ -49,6 +49,15 @@ Test Test Test Test Test Test Test Test Test Test
           <MapId>0</MapId>
         </CurrentMission>
       </Item>
+      <Item>
+        <MissionId>2</MissionId>
+        <CurrentMission Type="XRpgLibrary.MissionSystem.EliminationMission">
+          <Title>Get rid of the frenzied man</Title>
+          <Description>A strange man is blocking your path. It seems the only way through is past him. He does not seem to respond to your words. You have to kill him to get through.</Description>
+          <EliminationCount>2</EliminationCount>
+          <TargetId>1</TargetId>         
+        </CurrentMission>
+      </Item>
     </AllMissions>
   </Asset>
 </XnaContent>

@@ -10,11 +10,11 @@
     <Stats>
       <Item>
         <StatType>MIN_DAMAGE</StatType>
-        <Val>40.0</Val>
+        <Val>10</Val>
       </Item>
       <Item>
         <StatType>MAX_DAMAGE</StatType>
-        <Val>45.0</Val>
+        <Val>15</Val>
       </Item>
       <Item>
         <StatType>ATTACK_SPEED</StatType>

@@ -66,6 +66,11 @@ namespace XRPGLibrary.SpriteClasses
             get { return animations[currentAnimation].CurrentFrameRect; }
         }
 
+        public int CurrentAnimationFrame
+        {
+            get { return animations[currentAnimation].CurrentFrame; }
+        }
+
         public int Height
         {
             get { return animations[currentAnimation].FrameHeight; }
@@ -74,7 +79,7 @@ namespace XRPGLibrary.SpriteClasses
         public float Speed
         {
             get { return speed; }
-            set { speed = MathHelper.Clamp(speed, 1.0f, 16.0f); }
+            set { speed = MathHelper.Clamp(value, 1.0f, 16.0f); }
         }
 
         public Vector2 Position

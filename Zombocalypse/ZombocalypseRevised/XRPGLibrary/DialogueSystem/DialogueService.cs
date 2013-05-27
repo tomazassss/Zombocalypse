@@ -39,5 +39,13 @@ namespace XRpgLibrary.DialogueSystem
 			}
             return null;
 		}
+
+        public void RegisterDialogueProcessor(EventHandler processor)
+        {
+            foreach (KeyValuePair<DialogueInfo, DialogueOption> item in allDialogues)
+            {
+                item.Value.ProccessAdditionalData += processor;
+            }
+        }
 	}
 }

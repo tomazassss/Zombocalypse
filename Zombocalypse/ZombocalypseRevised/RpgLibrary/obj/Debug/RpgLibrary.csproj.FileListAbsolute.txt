@@ -1,10 +1,5 @@
-C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\RpgLibrary\bin\Debug\RpgLibrary.dll
-C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\RpgLibrary\bin\Debug\RpgLibrary.pdb
-C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\RpgLibrary\obj\Debug\RpgLibrary.dll
-C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\RpgLibrary\obj\Debug\RpgLibrary.pdb
-C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\RpgLibrary\obj\Debug\RpgLibrary.csprojResolveAssemblyReference.cache
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\RpgLibrary\bin\Debug\RpgLibrary.dll
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\RpgLibrary\bin\Debug\RpgLibrary.pdb
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\RpgLibrary\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\RpgLibrary\obj\Debug\RpgLibrary.dll
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\RpgLibrary\obj\Debug\RpgLibrary.pdb
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\RpgLibrary\bin\Debug\RpgLibrary.dll
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\RpgLibrary\bin\Debug\RpgLibrary.pdb
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\RpgLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\RpgLibrary\obj\Debug\RpgLibrary.dll
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\RpgLibrary\obj\Debug\RpgLibrary.pdb

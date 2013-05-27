@@ -14,7 +14,8 @@ namespace XRPGLibrary.Controls.Managers
         INVENTORY,
         EQUIPMENT,
         MISSION_LOG,
-        DIALOGUE
+        DIALOGUE,
+        PLAYER_INFO
     }
 
     public class HUDManager

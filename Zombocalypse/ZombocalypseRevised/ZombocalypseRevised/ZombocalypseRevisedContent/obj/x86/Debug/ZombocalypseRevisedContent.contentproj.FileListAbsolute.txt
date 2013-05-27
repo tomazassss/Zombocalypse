@@ -1,4 +1,3 @@
-C:\Dropbox\Shared\Game Project\ZOMBOCALYPSE_STABLE\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevisedContent\obj\x86\Debug\ZombocalypseRevisedContent.contentprojResolveAssemblyReference.cache
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevisedContent\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevisedContent\obj\x86\Debug\Audio\zombiai.xml
-C:\Users\Tomas\Documents\GitHub\Zombocalypse\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevisedContent\obj\x86\Debug\Audio\ZombieSounds\ZombieAttack.xml
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevisedContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevisedContent\obj\x86\Debug\Audio\zombiai.xml
+C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\ZombocalypseRevised\ZombocalypseRevisedContent\obj\x86\Debug\Audio\ZombieSounds\ZombieAttack.xml

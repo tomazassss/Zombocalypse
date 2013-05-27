@@ -74,14 +74,14 @@ namespace ZombocalypseRevised.Components.Actors
 
         #region Constructor Region
 
-        public NPC(Texture2D readTexture, Texture2D talkTexture, Vector2 position, Game game, Camera cam)
+        public NPC(SpriteSheet readTexture, SpriteSheet talkTexture, Vector2 position, Game game, Camera cam)
         {
-            this.readingSpriteSheet = readTexture;
-            this.readingSprite = BindAnimations(readingSpriteSheet,13);
+            this.readingSpriteSheet = readTexture.SpriteSheet1;
+            this.readingSprite = BindAnimations(readingSpriteSheet, readTexture.AnimationFrames);
             this.readingSprite.Position = position;
 
-            this.talkingSpriteSheet = talkTexture;
-            this.talkingSprite = BindAnimations(talkingSpriteSheet,8);
+            this.talkingSpriteSheet = talkTexture.SpriteSheet1;
+            this.talkingSprite = BindAnimations(talkingSpriteSheet,talkTexture.AnimationFrames);
             this.talkingSprite.Position = position;
 
             this.gameRef = game as Game1;

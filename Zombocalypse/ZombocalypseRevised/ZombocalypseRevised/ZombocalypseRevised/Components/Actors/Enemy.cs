@@ -9,6 +9,7 @@ using XRPGLibrary.TileEngine;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Media;
 using XRPGLibrary.Collisions;
+using XRPGLibrary.Animations;
 
 namespace ZombocalypseRevised.Components.Actors
 {
@@ -51,7 +52,18 @@ namespace ZombocalypseRevised.Components.Actors
 
         private int id;
 
-        public event EventHandler Dead;       
+        public event EventHandler Dead;
+
+        private SpriteFont damageTakenFont;
+        private FloatTextAnimation floatDamage;
+        private float floatDuration;
+
+        private int pathDelayCounter;
+        private int attackDelayCounter;
+        private bool hasAttacked;
+
+        private bool removeThisElement;
+        private float timeOfDeath;
 
         #endregion
 
@@ -180,27 +192,33 @@ namespace ZombocalypseRevised.Components.Actors
             set { hitCue = value; }
         }
 
+        public bool RemoveThisElement
+        {
+            get { return removeThisElement; }
+            set { removeThisElement = value; }
+        }
+
         #endregion
 
         #region Constructor Region
 
-        public Enemy(Texture2D moveTexture, Texture2D deathTexture, Texture2D hitTexture, Texture2D attackTexture,
+        public Enemy(SpriteSheet moveTexture, SpriteSheet deathTexture, SpriteSheet hitTexture, SpriteSheet attackTexture,
             Vector2 position, Game game, Camera cam)
         {
-            this.spriteSheet = moveTexture;
-            this.moveSprite = BindAnimations(spriteSheet,8);
+            this.spriteSheet = moveTexture.SpriteSheet1;
+            this.moveSprite = BindAnimations(spriteSheet,moveTexture.AnimationFrames);
             this.moveSprite.Position = position;
 
-            this.deathSpriteSheet = deathTexture;
-            this.deathSprite = BindAnimations(deathSpriteSheet,8);
+            this.deathSpriteSheet = deathTexture.SpriteSheet1;
+            this.deathSprite = BindAnimations(deathSpriteSheet,deathTexture.AnimationFrames);
             this.deathSprite.Position = position;
 
-            this.hitSpriteSheet = hitTexture;
-            this.hitSprite = BindAnimations(hitSpriteSheet,8);
+            this.hitSpriteSheet = hitTexture.SpriteSheet1;
+            this.hitSprite = BindAnimations(hitSpriteSheet,hitTexture.AnimationFrames);
             this.hitSprite.Position = position;
 
-            this.attackSpriteSheet = attackTexture;
-            this.attackSprite = BindAnimations(attackSpriteSheet,8);
+            this.attackSpriteSheet = attackTexture.SpriteSheet1;
+            this.attackSprite = BindAnimations(attackSpriteSheet,attackTexture.AnimationFrames);
             this.attackSprite.Position = position;
 
             this.gameRef = game as Game1;
@@ -212,7 +230,18 @@ namespace ZombocalypseRevised.Components.Actors
             this.eventCalled = false;
             this.visionRange = 300f;
 
-            
+            this.damageTakenFont = gameRef.DamageTakenFont;
+            this.floatDamage = new FloatTextAnimation();
+            floatDamage.TextFont = damageTakenFont;
+            floatDamage.Color = Color.WhiteSmoke;
+            this.floatDuration = 2500f;
+
+            this.pathDelayCounter = 30;
+            this.attackDelayCounter = attackTexture.AnimationFrames / 2;
+            this.hasAttacked = false;
+
+            this.removeThisElement = false;
+            this.timeOfDeath = 0.0f;
         }
 
         #endregion
@@ -263,31 +292,6 @@ namespace ZombocalypseRevised.Components.Actors
                     
                     deathSprite.IsAnimating = false;
                     hitSprite.IsAnimating = false;
-                    /*
-                    int degrees = GetDegrees(moveSprite.Position, player.Sprite.Position);
-
-                    Vector2 direction = player.Sprite.Position - moveSprite.Position;
-                    direction.Normalize();
-                    
-                    Vector2 tempPosition = moveSprite.Position;
-                    tempPosition.X += 24;
-                    tempPosition.Y += 40;
-                    tempPosition += direction * (moveSprite.Speed / 2);
-                    Point position = Engine.VectorToCellIso(tempPosition);
-                    
-                    if (mapGrid[position.X, position.Y] == 0)
-                    {
-                        if (Vector2.Distance(moveSprite.Position, player.Sprite.Position) < visionRange)
-                        {
-                            moveSprite.IsAnimating = true;
-                            moveSprite.Position += direction * (moveSprite.Speed / 2);
-
-                        }
-                        else
-                        {
-                            moveSprite.IsAnimating = false;
-                        }
-                    }*/
 
                     //---------------------------------------------
                     //Meginimas padaryti ai
@@ -311,11 +315,16 @@ namespace ZombocalypseRevised.Components.Actors
                             direction.Normalize();
 
                             moveSprite.IsAnimating = true;
-                            moveSprite.Position += direction * (moveSprite.Speed / 2);
+                            moveSprite.Position += direction * moveSprite.Speed;
                         }
                         else
                         {
-                            path.FindPath();
+                            pathDelayCounter--;
+                            if (pathDelayCounter <= 0)
+                            {
+                                path.FindPath();
+                                pathDelayCounter = 30;
+                            }
 
                             Vector2 lastNodeCenter = GetNodeCenterPosition(path.LastPosition);
                             Vector2 prevLastNodeCenter;
@@ -335,7 +344,7 @@ namespace ZombocalypseRevised.Components.Actors
                             direction.Normalize();
 
                             moveSprite.IsAnimating = true;
-                            moveSprite.Position += direction * (moveSprite.Speed / 2);
+                            moveSprite.Position += direction * moveSprite.Speed;
                         }
                     }
                     else
@@ -371,7 +380,7 @@ namespace ZombocalypseRevised.Components.Actors
                     hitSprite.Update(gameTime);
                     if (!hitSprite.AnimateOnceAndResume)
                     {
-                        beenHit = false;
+                        beenHit = false; 
                     }
                 }
                 else if (attacking)
@@ -389,6 +398,17 @@ namespace ZombocalypseRevised.Components.Actors
 
                     int degrees = GetDegrees(moveSprite.Position, player.Sprite.Position);
 
+                    if (attackSprite.CurrentAnimationFrame > attackDelayCounter && hasAttacked == false)
+                    {
+                        hasAttacked = true;
+                        if (this.BoundingBox.Intersects(player.BoundingBox))
+                        {
+                            if (IntersectsPixel(this.BoundingBox, this.TextureData, player.BoundingBox, player.TextureData))
+                            {
+                                player.TakeDamage(damage);
+                            }
+                        }
+                    }
 
                     attackSprite.LockToMap();
                     SetCurrentAnimation(attackSprite, degrees);
@@ -396,11 +416,7 @@ namespace ZombocalypseRevised.Components.Actors
                     if (!attackSprite.AnimateOnceAndResume)
                     {
                         attacking = false;
-                        if (this.BoundingBox.Intersects(player.BoundingBox))
-                        {
-                            if (IntersectsPixel(this.BoundingBox, this.TextureData, player.BoundingBox, player.TextureData))
-                                player.TakeDamage(damage);
-                        }
+                        hasAttacked = false;
                     }
                 }
             }
@@ -411,6 +427,11 @@ namespace ZombocalypseRevised.Components.Actors
                     OnChanged(EventArgs.Empty);
                     enemyAttackSoundBank.PlayCue(deathCue);
                     eventCalled = true;
+                    timeOfDeath = gameTime.TotalGameTime.Seconds;
+                }
+                if ((gameTime.TotalGameTime.Seconds - timeOfDeath) > 10)
+                {
+                    removeThisElement = true;
                 }
                 deathSprite.AnimateOnce = true;
 
@@ -424,6 +445,7 @@ namespace ZombocalypseRevised.Components.Actors
                 deathSprite.Update(gameTime);
             }
             enemyAttack.Update();
+            floatDamage.Update(gameTime);
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
@@ -442,6 +464,7 @@ namespace ZombocalypseRevised.Components.Actors
                 {
                     attackSprite.Draw(gameTime, spriteBatch, camera);
                 }
+                floatDamage.Draw(spriteBatch, camera.Position);
             }
             else
             {
@@ -489,8 +512,8 @@ namespace ZombocalypseRevised.Components.Actors
         {
             int degrees = 0;
 
-            float dx = (destination.X + this.camera.Position.X) - source.X;
-            float dy = (destination.Y + this.camera.Position.Y) - source.Y;
+            float dx = (destination.X - this.camera.Position.X) - (source.X - this.camera.Position.X);
+            float dy = (destination.Y - this.camera.Position.Y) - (source.Y - this.camera.Position.Y);
 
             degrees = Convert.ToInt32(Math.Atan2(dy, dx) * (180 / Math.PI));
             if (degrees < 0)
@@ -547,10 +570,19 @@ namespace ZombocalypseRevised.Components.Actors
             return false;
         }
 
+        public void TakeDamage(float damage)
+        {
+            floatDamage.StartDrawing(true,
+                                    damage.ToString(),
+                                    moveSprite.Position,
+                                    new Vector2(moveSprite.Position.X, moveSprite.Position.Y - (float)moveSprite.Height),
+                                    floatDuration);
+        }
+
         protected virtual void OnChanged(EventArgs e)
         {
             if (Dead != null)
-                Dead(this, e);
+                Dead(id, e);
         }
 
         #endregion
