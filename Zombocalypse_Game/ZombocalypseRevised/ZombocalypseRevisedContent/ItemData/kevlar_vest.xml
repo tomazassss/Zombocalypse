@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="XRPGLibrary.Controls.Items.Item">
+    <ItemType>TORSO</ItemType>
+    <ItemName>Kevlar Vest</ItemName>
+    <IsEquipable>true</IsEquipable>
+    <IsStackable>false</IsStackable>
+    <MaxStack>1</MaxStack>
+    <ID>6</ID>
+    <Stats>
+      <Item>
+        <StatType>ARMOR</StatType>
+        <Val>10.0</Val>
+      </Item>
+    </Stats>
+  </Asset>
+</XnaContent>

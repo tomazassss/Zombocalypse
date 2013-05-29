@@ -13,6 +13,7 @@ namespace XRPGLibrary.TileEngine.TileMaps
         #region Field Region
 
         private static readonly int MAP_SIZE_OFFSET = 3;
+        private static readonly int MAP_SIZE_MODIFIED_OFFSET = 3;
 
         private static int baseOffsetX;
         private static int baseOffsetY;
@@ -31,7 +32,7 @@ namespace XRPGLibrary.TileEngine.TileMaps
             baseOffsetY = -Engine.TileHeight;
             tileStepX = Engine.TileWidth;
             tileStepY = Engine.TileHeight / 2;
-            oddRowOffset = Engine.TileHeight;
+            oddRowOffset = Engine.TileWidth / 2;
         }
 
         public TileMapIso(Tileset tileset, MapLayer mapLayer)
@@ -57,14 +58,35 @@ namespace XRPGLibrary.TileEngine.TileMaps
 
             Point startingPoint = Engine.VectorToCellIso(camera.Position);
 
-            //TODO: kažko glitchina/bugina kairę pusę kai eini žemyn
-            if (startingPoint.X > MAP_SIZE_OFFSET - 1)
+            int mapSizeOffset = 0;
+
+            if (startingPoint.X > MAP_SIZE_OFFSET && startingPoint.Y > MAP_SIZE_OFFSET)
             {
-                startingPoint.X -= MAP_SIZE_OFFSET;
+                mapSizeOffset = MAP_SIZE_OFFSET;
             }
-            if (startingPoint.Y > MAP_SIZE_OFFSET - 1)
+            else
             {
-                startingPoint.Y -= MAP_SIZE_OFFSET;
+                mapSizeOffset = MAP_SIZE_MODIFIED_OFFSET;
+            }
+
+
+            //TODO: kažko glitchina/bugina kairę pusę kai eini žemyn
+            if (startingPoint.X > mapSizeOffset + 3)
+            {
+                startingPoint.X -= (mapSizeOffset + 4);
+            }
+            else
+            {
+                startingPoint.X = 0;
+            }
+            //HACKS
+            if (startingPoint.Y > mapSizeOffset + 7)
+            {
+                startingPoint.Y -= (mapSizeOffset + 8);
+            }
+            else
+            {
+                startingPoint.Y = 0;
             }
 
             Vector2 bottomRightCorner = new Vector2(
@@ -73,22 +95,22 @@ namespace XRPGLibrary.TileEngine.TileMaps
             Point endPoint = Engine.VectorToCellIso(bottomRightCorner);
 
             //TODO: neleisti kamerai užeiti už žemėlapio ribų
-            if (endPoint.X < mapLayers[0].Width - MAP_SIZE_OFFSET)
+            if (endPoint.X < mapLayers[0].Width - mapSizeOffset)
             {
-                endPoint.X += MAP_SIZE_OFFSET;
+                endPoint.X += mapSizeOffset;
             }
             else
             {
-                endPoint.X = mapLayers[0].Width - MAP_SIZE_OFFSET;
+                endPoint.X = mapLayers[0].Width - mapSizeOffset;
             }
 
-            if (endPoint.Y < mapLayers[0].Height - MAP_SIZE_OFFSET)
+            if (endPoint.Y < mapLayers[0].Height - mapSizeOffset)
             {
-                endPoint.Y += MAP_SIZE_OFFSET;
+                endPoint.Y += mapSizeOffset;
             }
             else
             {
-                endPoint.Y = mapLayers[0].Height - MAP_SIZE_OFFSET;
+                endPoint.Y = mapLayers[0].Height - mapSizeOffset;
             }
 
            // Console.WriteLine("Camera.Y : {0}, mapLayers[0].Height:{1}", endPoint.Y, mapLayers[0].Height);

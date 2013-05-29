@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="XRPGLibrary.Controls.Items.Item">
+    <ItemType>HEAD_GEAR</ItemType>
+    <ItemName>Night Vision Goggles</ItemName>
+    <IsEquipable>true</IsEquipable>
+    <IsStackable>false</IsStackable>
+    <MaxStack>1</MaxStack>
+    <ID>7</ID>
+    <Stats></Stats>
+  </Asset>
+</XnaContent>

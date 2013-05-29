@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\cursor.xnb</Output>
-      <Time>2013-05-26T20:02:25.1939907+03:00</Time>
+      <Output>C:\Users\Karolis\Desktop\Zombiai\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\cursor.xnb</Output>
+      <Time>2013-05-26T19:37:47.8238721+03:00</Time>
     </Item>
     <Item>
       <Source>grid.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\grid.xnb</Output>
-      <Time>2013-05-26T20:02:25.2095908+03:00</Time>
+      <Output>C:\Users\Karolis\Desktop\Zombiai\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\grid.xnb</Output>
+      <Time>2013-05-26T19:37:47.8758743+03:00</Time>
     </Item>
     <Item>
       <Source>GridIso.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\GridIso.xnb</Output>
-      <Time>2013-05-26T20:02:25.1471907+03:00</Time>
+      <Output>C:\Users\Karolis\Desktop\Zombiai\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\GridIso.xnb</Output>
+      <Time>2013-05-26T19:37:47.8178718+03:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -34,10 +34,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditorContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditorContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\Karolis\Desktop\Zombiai\ZombocalypseRevised\MapEditor\MapEditorContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Karolis\Desktop\Zombiai\ZombocalypseRevised\MapEditor\MapEditor\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Karolis\Desktop\Zombiai\ZombocalypseRevised\MapEditor\MapEditorContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Karolis\Desktop\Zombiai\ZombocalypseRevised\MapEditor\MapEditor\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -66,7 +66,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2012-09-20T22:45:26.5447717+03:00</Value>
+        <Value>2012-09-20T16:35:39.0176783+03:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

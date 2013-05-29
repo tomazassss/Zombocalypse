@@ -44,6 +44,7 @@ namespace ZombocalypseRevised
         private EquipmentScreen equipmentScreen;
         private InventoryScreen inventoryScreen;
         private GameOverScreen gameOverScreen;
+        private ToBeContinuedScreen toBeContinuedScreen;
 
         #endregion
 
@@ -111,6 +112,13 @@ namespace ZombocalypseRevised
             set { gameOverScreen = value; }
         }
 
+        public ToBeContinuedScreen ToBeContinuedScreen
+        {
+            get { return toBeContinuedScreen; }
+            set { toBeContinuedScreen = value; }
+        }
+
+
         public GameStateManager StateManager
         {
             get { return this.stateManager; }
@@ -149,6 +157,7 @@ namespace ZombocalypseRevised
             titleScreen = new TitleScreen(this, stateManager);
             startMenuScreen = new StartMenuScreen(this, stateManager);
             gameOverScreen = new GameOverScreen(this, stateManager, screenRectangle);
+            toBeContinuedScreen = new ToBeContinuedScreen(this, stateManager, screenRectangle);
 
 
             stateManager.ChangeState(titleScreen);
@@ -255,8 +264,8 @@ namespace ZombocalypseRevised
             base.Draw(gameTime);
 
             spriteBatch.Begin();
-            spriteBatch.DrawString(_spr_font, string.Format("FPS={0}", _fps),
-                new Vector2(10.0f, 20.0f), Color.Red);
+           // spriteBatch.DrawString(_spr_font, string.Format("FPS={0}", _fps),
+           //    new Vector2(10.0f, 20.0f), Color.Red);
             spriteBatch.End();
 
 

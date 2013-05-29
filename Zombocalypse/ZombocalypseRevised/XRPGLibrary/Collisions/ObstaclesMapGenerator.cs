@@ -58,7 +58,7 @@ namespace XRPGLibrary.Collisions
                             };
                             break;
                         }
-                        else if (tile.TileIndex != -1 && tile.TileSetIndex != -1)
+                        else if (tile.TileIndex != -1 && tile.TileSetIndex != -1 && mapData.Layers[i].LayerLevel == 2)
                         {
                             grid[x, y] = new PathNode()
                             {

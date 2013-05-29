@@ -1,0 +1,6 @@
+Content\Audio\zombiai.xgs
+Content\Audio\Wave Bank.xwb
+Content\Audio\Sound Bank.xsb
+Content\Audio\ZombieSounds\ZombieAttack.xgs
+Content\Audio\ZombieSounds\ZombieAttackWaveBank.xwb
+Content\Audio\ZombieSounds\ZombieAttackSoundBank.xsb

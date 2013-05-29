@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XnaContent>
+  <Asset Type="XRPGLibrary.Controls.Items.Item">
+    <ItemType>AMMO</ItemType>
+    <ItemName>Desert Eagle Ammo</ItemName>
+    <IsEquipable>false</IsEquipable>
+    <IsStackable>true</IsStackable>
+    <MaxStack>50</MaxStack>
+    <ID>3</ID>
+    <Stats></Stats>
+  </Asset>
+
+</XnaContent>

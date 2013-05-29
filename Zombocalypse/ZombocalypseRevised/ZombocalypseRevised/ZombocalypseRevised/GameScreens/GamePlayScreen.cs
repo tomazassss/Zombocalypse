@@ -160,7 +160,7 @@ namespace ZombocalypseRevised.GameScreens
                     dialogueWindow.Position = new Vector2(
                         (screenRectangle.Width - dialogueWindow.Size.X) / 2f,
                         screenRectangle.Height / 2f + (screenRectangle.Height / 2f - dialogueWindow.Size.Y) / 2f);
-                    dialogueWindow.Title = professor.Name;
+                    dialogueWindow.Title = npc.Name;
                     dialogueWindow.BorderTexture = tooltipBorder;
 
                     dialogueWindow.Component = dialogueComponent;
@@ -388,7 +388,6 @@ namespace ZombocalypseRevised.GameScreens
 
             missions = gameRef.Content.Load<MissionFactory>(@"Missions\AllMissions");
             missionManager.AddMission(missions.GetMissionById(0));
-            missionManager.AddMission(missions.GetMissionById(1));
 
             dialogueManager.DialogueSelected += missionManager.OnUpdateEvent;
 
@@ -568,6 +567,13 @@ namespace ZombocalypseRevised.GameScreens
 
 
             map.Draw(gameRef.SpriteBatch, player.Camera);
+
+            foreach (Enemy e in enemies)
+                e.Draw(gameTime, gameRef.SpriteBatch);
+
+            foreach (NPC n in npcs)
+                n.Draw(gameTime, gameRef.SpriteBatch);
+
             player.Draw(gameTime, gameRef.SpriteBatch);
             if (!player.IsShooting)
             {
@@ -578,12 +584,6 @@ namespace ZombocalypseRevised.GameScreens
                 shootingSprite.Draw(gameTime, gameRef.SpriteBatch, player.Camera);
             }
             gun.Draw(gameRef.SpriteBatch);
-
-            foreach (Enemy e in enemies)
-                e.Draw(gameTime, gameRef.SpriteBatch);
-
-            foreach (NPC n in npcs)
-                n.Draw(gameTime, gameRef.SpriteBatch);
 
             base.Draw(gameTime);
             
@@ -806,7 +806,8 @@ namespace ZombocalypseRevised.GameScreens
             WaveBank enemyWaveBank = new WaveBank(enemyAudioEngine, @"Content\Audio\ZombieSounds\ZombieAttackWaveBank.xwb");
 
             //2 Priesai prie tako i miesteli
-            Populate(new Vector2(376.718f, 266.718f), 2, 40, enemyAudioEngine, enemyWaveBank);
+            Populate(new Vector2(627.3666f, 417.6126f), 1, 10, enemyAudioEngine, enemyWaveBank);
+            Populate(new Vector2(610.3666f, 414.6126f), 1, 10, enemyAudioEngine, enemyWaveBank);
             //8 Priesai lauke siaure rytuose nuo miestelio
             Populate(new Vector2(2131.857f, 118.0393f), 8, 100, enemyAudioEngine, enemyWaveBank);
             //20 Priesu lauke rytuose nuo miestelio (Boso chebra) 
@@ -826,6 +827,8 @@ namespace ZombocalypseRevised.GameScreens
                                     player.Camera,
                                     enemyAudioEngine,
                                     enemyWaveBank);
+
+            death.Dead += OnBossDeath;
 
             enemies.Add(death);
 
@@ -897,6 +900,7 @@ namespace ZombocalypseRevised.GameScreens
             chattables = new List<IChattable>();
             EntityService.GetInstance().Npcs = chattables;
 
+            //Profesorius
             Texture2D professorReadingSpriteSheet = Game.Content.Load<Texture2D>(@"NPCSprites\Professor_Reading");
             SpriteSheet professorReadingSS = new SpriteSheet(professorReadingSpriteSheet, 13);
             Texture2D professorTalkingSpriteSheet = Game.Content.Load<Texture2D>(@"NPCSprites\Professor_Talking");
@@ -909,9 +913,40 @@ namespace ZombocalypseRevised.GameScreens
             //TODO: Hardcoded ID
             professor.Id = 0;
             professor.Name = "Zweistein";
-
             npcs.Add(professor);
             chattables.Add(professor);
+
+            //Statybininkas
+            Texture2D builderPausedSpriteSheet = Game.Content.Load<Texture2D>(@"NPCSprites\Builder_Paused");
+            SpriteSheet builderPausedSS = new SpriteSheet(builderPausedSpriteSheet, 8);
+            Texture2D builderTalkingSpriteSheet = Game.Content.Load<Texture2D>(@"NPCSprites\Builder_Talking");
+            SpriteSheet builderTalkingSS = new SpriteSheet(builderTalkingSpriteSheet, 8);
+            Professor builder = new Professor(builderPausedSS,
+                                                builderTalkingSS,
+                                                new Vector2(1072.002f, 609.52f),
+                                                gameRef,
+                                                player.Camera);
+            builder.Id = 1;
+            builder.Name = "Robert";
+            npcs.Add(builder);
+            chattables.Add(builder);
+
+            //Zmogus netoli boso
+            Texture2D carrierStoppedSpriteSheet = Game.Content.Load<Texture2D>(@"NPCSprites\Carrier_Stopped");
+            SpriteSheet carrierStoppedSS = new SpriteSheet(carrierStoppedSpriteSheet, 1);
+            Texture2D carrierTalkingSpriteSheet = Game.Content.Load<Texture2D>(@"NPCSprites\Carrier_Talking");
+            SpriteSheet carrierTalkingSS = new SpriteSheet(carrierTalkingSpriteSheet, 8);
+            Professor carrier = new Professor(carrierStoppedSS,
+                                                carrierTalkingSS,
+                                                new Vector2(1869.732f, 727.5858f),
+                                                gameRef,
+                                                player.Camera);
+            carrier.Id = 2;
+            carrier.Name = "Charon";
+            npcs.Add(carrier);
+            chattables.Add(carrier);
+            
+            
         }
 
         private void LoadSounds()
@@ -1147,6 +1182,11 @@ namespace ZombocalypseRevised.GameScreens
         private void OnPlayerDeath(object sender, EventArgs args)
         {
             stateManager.ChangeState(gameRef.GameOverScreen);
+        }
+
+        private void OnBossDeath(object sender, EventArgs args)
+        {
+            stateManager.ChangeState(gameRef.ToBeContinuedScreen);
         }
 
         #endregion

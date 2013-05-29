@@ -1,5 +1,5 @@
-C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\RpgLibrary\bin\Debug\RpgLibrary.dll
-C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\RpgLibrary\bin\Debug\RpgLibrary.pdb
-C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\RpgLibrary\obj\Debug\ResolveAssemblyReference.cache
-C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\RpgLibrary\obj\Debug\RpgLibrary.dll
-C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\RpgLibrary\obj\Debug\RpgLibrary.pdb
+D:\Mokslams\Bakalaurinis\Zombiai\ZombocalypseRevised\RpgLibrary\bin\Debug\RpgLibrary.dll
+D:\Mokslams\Bakalaurinis\Zombiai\ZombocalypseRevised\RpgLibrary\bin\Debug\RpgLibrary.pdb
+D:\Mokslams\Bakalaurinis\Zombiai\ZombocalypseRevised\RpgLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\Mokslams\Bakalaurinis\Zombiai\ZombocalypseRevised\RpgLibrary\obj\Debug\RpgLibrary.dll
+D:\Mokslams\Bakalaurinis\Zombiai\ZombocalypseRevised\RpgLibrary\obj\Debug\RpgLibrary.pdb

@@ -1,6 +1,12 @@
-C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.dll
-C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.pdb
-C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
-C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\XRPGLibrary.dll
-C:\Tomo failai\Darbai\Univeras\Programavimas\XNA\Zombocalypse\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\XRPGLibrary.pdb
+D:\Mokslams\Bakalaurinis\Zombiai\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.dll
+D:\Mokslams\Bakalaurinis\Zombiai\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.pdb
+D:\Mokslams\Bakalaurinis\Zombiai\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Mokslams\Bakalaurinis\Zombiai\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Mokslams\Bakalaurinis\Zombiai\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\XRPGLibrary.dll
+D:\Mokslams\Bakalaurinis\Zombiai\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\XRPGLibrary.pdb
+C:\Users\Karolis\Desktop\Zombiai\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.dll
+C:\Users\Karolis\Desktop\Zombiai\ZombocalypseRevised\XRPGLibrary\bin\x86\Debug\XRPGLibrary.pdb
+C:\Users\Karolis\Desktop\Zombiai\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Karolis\Desktop\Zombiai\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Karolis\Desktop\Zombiai\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\XRPGLibrary.dll
+C:\Users\Karolis\Desktop\Zombiai\ZombocalypseRevised\XRPGLibrary\obj\x86\Debug\XRPGLibrary.pdb

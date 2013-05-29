@@ -236,7 +236,7 @@ namespace ZombocalypseRevised.Components.Actors
             floatDamage.Color = Color.WhiteSmoke;
             this.floatDuration = 2500f;
 
-            this.pathDelayCounter = 30;
+            this.pathDelayCounter = 20;
             this.attackDelayCounter = attackTexture.AnimationFrames / 2;
             this.hasAttacked = false;
 
@@ -323,7 +323,7 @@ namespace ZombocalypseRevised.Components.Actors
                             if (pathDelayCounter <= 0)
                             {
                                 path.FindPath();
-                                pathDelayCounter = 30;
+                                pathDelayCounter = 20;
                             }
 
                             Vector2 lastNodeCenter = GetNodeCenterPosition(path.LastPosition);

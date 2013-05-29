@@ -64,6 +64,11 @@ Content\TileSets\TileSet_Trees_128_224.xnb
 Content\TileSets\TileSet_Tombs2_256_128.xnb
 Content\EnemySprites\MisterDeath\MisterDeath_Attacking.xnb
 Content\EnemySprites\MisterDeath\MisterDeath_Walking.xnb
+Content\NPCSprites\Builder_Paused.xnb
+Content\NPCSprites\Builder_Talking.xnb
+Content\NPCSprites\Carrier_Stopped.xnb
+Content\NPCSprites\Carrier_Talking.xnb
+Content\Backgrounds\EndGameScreen.xnb
 Content\Fonts\ControlFont.xnb
 Content\Fonts\ItemDataFont.xnb
 Content\Fonts\ButtonFont.xnb

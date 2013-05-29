@@ -208,8 +208,8 @@ namespace ZombocalypseRevised.Components.Actors
         {
             int degrees = 0;
 
-            float dx = (destination.X + this.camera.Position.X) - source.X;
-            float dy = (destination.Y + this.camera.Position.Y) - source.Y;
+            float dx = (destination.X - this.camera.Position.X) - (source.X - this.camera.Position.X);
+            float dy = (destination.Y - this.camera.Position.Y) - (source.Y - this.camera.Position.Y);
 
             degrees = Convert.ToInt32(Math.Atan2(dy, dx) * (180 / Math.PI));
             if (degrees < 0)
